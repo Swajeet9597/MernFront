@@ -1,0 +1,13 @@
+.restonamessM{
+    /* width: 100%; */
+    display: flex;
+    /* justify-content: space-between; */
+    overflow-x: scroll;
+    gap: 1rem;
+
+}
+
+
+.restonamessboxM img{
+    width: 12rem;
+}

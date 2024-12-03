@@ -1,0 +1,133 @@
+.paymentbox{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.paymentl{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.payt{
+    width: 100%;
+    display: flex;
+    border: 1px solid #FFE8CE;
+    border-radius: 56px;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.paytt{
+    display: flex;
+    flex-direction: column;
+}
+
+.payttt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 1rem; */
+    
+}
+.payttr{
+    margin-right: 2rem;
+}
+
+
+.paytttt{
+    display: flex;
+    align-items: center;
+    margin-left: 1.8rem;
+    gap: 1rem;
+    
+}
+
+.payttt img{
+    width: 25%;
+}
+
+.paytd{
+    width: 100%;
+    display: flex;
+    border: 1px solid #FFE8CE;
+    border-radius: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+
+}
+
+.paymentr{
+    width: 38%;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: fit-content;
+    padding: 0.5rem 0;
+    border-radius: 12px;
+}
+
+.hhhj{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.paymentr button{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+}
+
+.hhhj :nth-child(1){
+    margin-left: 1rem;
+}
+
+
+.hhhj :nth-child(2){
+    margin-right: 1rem;
+}
+
+.paymentr .liiii{
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .paymentbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .paymentr .liiii{
+        display: block;
+    }
+    .paymentr{
+        width: 80%;
+border: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
+        padding: 0.5rem 0;
+        border-radius: 12px;
+        position: absolute;
+        bottom: 0;
+    }
+    .paymentl{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    .hhhj span{
+        font-size: 1.5rem;
+    }
+    
+}

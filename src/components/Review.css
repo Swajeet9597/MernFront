@@ -1,0 +1,150 @@
+.reviewbox{
+    width: 100%;
+    position: relative;
+    padding: 4rem 0 4rem 0;
+}
+
+.reviewhead{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 6rem; */
+}
+
+.reviewbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* .reviewhead :nth-child(1){
+    font-size: 2.5rem;
+    font-weight: 700;
+} */
+
+.reviewhead .custre{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.reviewscard{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviewcard1{
+    display: flex;
+    width: 29%;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 2rem 1rem 2rem 1rem;
+    gap: 2rem;
+    border-radius: 12px;
+}
+
+.rcardt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rcardl{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdetail{
+    display: flex;
+    flex-direction: column;
+}
+
+.rdetail :nth-child(1){
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.rcardr{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-end;
+    gap: 0.5rem;
+}
+
+.rcardr :nth-child(2){
+    display: flex;
+}
+.rcardr :nth-child(1){
+    /* display: flex;
+     */
+     width: 6.3rem;
+}
+
+.rcardstar{
+    display: flex;
+    gap: 0.1rem;
+    justify-content: flex-end;
+}
+
+.rcardstar :nth-child(1){
+    width: 1.3rem;
+}
+
+.rcardstar :nth-child(2){
+    /* width: 1.3rem; */
+    color: black;
+    text-align: end;
+    margin: 0;padding: 0;
+    width: auto;
+}
+
+.rcardb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rcardb p{
+    text-align: center;
+    color: black;
+}
+
+
+.ratingbox{
+    /* width: 20%; */
+    position: absolute;
+    bottom: -13%;
+    right: 46%;
+}
+
+.ratingbox img{
+    /* width: 100%; */
+    width: 6.5rem;
+}
+
+
+
+
+
+@media screen and (max-width:1265px) {
+    .rcardl{
+        display: flex;
+        gap: 0.4rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rcardstar :nth-child(1){
+       display: none;
+    }
+    
+}

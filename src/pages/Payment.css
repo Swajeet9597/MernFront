@@ -1,0 +1,137 @@
+.nav{
+    width: 90vw;
+    border: 1px solid black ;
+    margin: auto;
+    height: 7vh;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #0000001A;
+}
+
+.nav2{
+    width: 90vw;
+    
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #0000001A; */
+}
+
+.orderDetailsspan{
+    width: 90vw;
+    
+    margin: auto;
+    display: flex;  
+    gap: 1rem;
+    
+}
+.orderDetailsspan span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.orderdetails{
+    width: 90vw;
+    height: 23rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.homeOffh1POO{
+    width: 90%;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.homeOffh1POO span{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    /* margin-left: 2rem; */
+    margin-bottom: 1rem;
+}
+
+.paymentCompo{
+    width: 90vw;
+    /* height: 23rem; */
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+
+
+
+
+
+
+
+
+
+
+.footerHomeO{
+    width: 100%;
+    height: 34vh;
+    margin-top: 2rem;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.restonamesPO{
+    width: 90vw;
+    margin: auto;
+    /* margin-top: 3rem; */
+    /* margin-bottom: 7rem; */
+}
+.homeOffh1PO{
+    width: 90%;
+    margin: auto;
+    /* margin-top: 7rem; */
+}
+.homeOffh1PO span{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+/* mobile view  */
+
+.checkoutMM{
+    width: 95vw;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.checkoutMM :nth-child(2){
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.orderdetailsM{
+    width: 95vw;
+    /* height: 35rem; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}

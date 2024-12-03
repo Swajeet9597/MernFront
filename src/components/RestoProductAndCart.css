@@ -1,0 +1,123 @@
+.restboxPC{
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    
+}
+
+.restboxPCleft{
+    width: 68%;
+}
+.restboxPCright{
+    width: 32%;
+}
+
+.productHeadC{
+    width: 100%;
+    display: flex;
+/* justify-content: space-between;*/
+justify-content: flex-start;
+flex-wrap: wrap;
+margin-bottom: 2rem;
+}
+
+.restoimg1PC{
+    width: 23rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.restoimg1PC img{
+    width: 100%;
+}
+.restboxPCleft span{
+
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    /* margin-top: 2rem; */
+}
+
+.burgerBoxC{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+    /* gap: 0.5rem; */
+    margin-bottom: 2rem;
+    
+}
+
+.burgerBox1C{
+    /* width: 30%; */
+    width: 26rem;
+    border: 1px solid #0000001A;
+    box-shadow: 5px 5px 34px 0px #00000040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+}
+.burgerText{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 0.6rem;
+    justify-content: space-between;
+}
+
+.burgerImg{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.burgimg1{width: 100%;}
+
+.burgimg2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+
+}
+
+.burgerpluse{
+   position: absolute;
+   bottom: 3%;
+   right : 6%;
+   width: 30%;
+   /* height: 3rem; */
+}
+
+.burgerText p{
+    color: black;
+}
+
+.burgerText :nth-child(1){
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.burgerText :nth-child(3){
+  
+    font-weight: 600;
+}
+
+@media screen and (max-width:960px ) {
+  
+.restboxPCleft{
+    width: 60%;
+}
+.restboxPCright{
+    width: 40%;
+}
+}

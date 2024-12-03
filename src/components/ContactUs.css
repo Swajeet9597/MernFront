@@ -1,0 +1,182 @@
+.contactusbox{
+    width: 100%;
+    background: #e7e6e6 ;
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem 0 4.5rem 0;
+    gap: 3.5rem;
+    border-radius: 12px;
+    
+}
+
+.aboutushead{
+display: flex;
+width: 90%;
+margin: auto;
+justify-content: space-between;
+}
+
+
+
+.aboutushead span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.aboutNav{
+ display: flex;
+ gap: 2rem;
+}
+
+.aboutNav .fre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FC8A06;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    border-radius: 120px;
+}
+
+h5{
+    padding: 0;
+    margin: 0;
+   
+}
+
+.aboutNav span{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.aboutBody{
+    display: flex;
+width: 90%;
+margin: auto;
+background-color: white;
+border-radius: 12px;
+padding: 2.5rem 1rem 3rem 0;
+
+}
+
+.aboutBody span{
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.que{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.que .how{
+    background: #FC8A06;
+    padding: 0.7rem 1.2rem 0.7rem 1.2rem;
+    border-radius: 120px        ;
+}
+
+.solright{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sol{
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   /* flex-direction: column; */
+}
+
+.solboxxx{
+    width: 31%;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 12px;
+}
+
+.solbox{
+  width: 100%; 
+  display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.solbox span{
+    text-align: center;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.solbox img{
+    width: 50%;
+    margin: auto;
+}
+
+.solboxp{
+    display: flex;
+    flex-direction: column;
+}
+
+.solboxp p{
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin: 0;
+}
+
+
+.solrightppp {
+
+    width: 95%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+
+.solrightppp p {
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+
+@media screen and (max-width:1160px) {
+    .aboutBody span{
+        font-weight: 700;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width:860px) {
+    .aboutBody span{
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+
+}

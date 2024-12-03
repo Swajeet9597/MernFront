@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Navbar2{
+    width: 95%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* padding-left: 6rem; */
+}
+
+.navbox1{
+    width: 25%;
+}
+
+.navbox1 img{
+    width: 13rem;
+}
+
+.navbox2{
+    width: 60%;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    
+}
+
+.navbox2 span{
+    margin: 0;
+  text-align: center;
+  /* font-size: 1rem; */
+}
+
+
+
+.profile{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    color: aliceblue;
+
+}
+.profile1{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid black; 
+    padding: 0.8rem 0 0.8rem 0;   
+    background: #03081F;
+    color: aliceblue;
+    gap: 0.2rem;
+}
+
+.navbox2 span{
+    font-size: 1.2rem;
+}
+
+.profile1 span{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 1260px) {
+    .navbox2{
+        width: 58%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }
+  
+
+
+@media only screen and (max-width: 1140px) {
+    .navbox2{
+        width: 58%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .navbox1{
+        width: 22%;
+    }
+    .profile{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
+    
+        color: aliceblue;
+    
+    }
+    .Navbar2{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        /* padding-left: 6rem; */
+    }
+  }
+  
+
+  
+  @media only screen and (max-width: 890px) {
+    .navbox1 img{
+        width: 10rem;
+    }
+    .navbox2{
+        width: 62%;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }
+
+
+
+  @media only screen and (max-width: 780px) {
+    .navbox2{
+
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+  }
+  
+    
+  

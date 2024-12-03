@@ -1,0 +1,320 @@
+*{
+    padding: 0;margin: 0;
+}
+
+.nav{
+    width: 90vw;
+    border: 1px solid black ;
+    margin: auto;
+    height: 7vh;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #0000001A;
+}
+
+.nav2{
+    width: 90vw;
+    
+    margin: auto;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #0000001A; */
+}
+
+.homepageIMG{
+    width: 90vw;
+    
+    margin: auto;
+}
+
+.homepageIMG img {
+    width: 100%;
+}
+
+.homeoOff{
+    width: 90vw;
+    
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.homeOffh1{
+    width: 60%;
+    margin-top: 2rem;
+}
+.homeOffh1 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.homeOffnav{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
+}
+
+.homeOffnav span{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza{
+    border: 0.5px solid #FC8A06;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border-radius: 120px;
+}
+
+
+.resto{
+    width: 90vw;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.catHeading{
+    width: 90vw;
+    margin: auto;
+
+    margin-top: 2rem;
+}
+
+.category{
+    width: 90vw;
+    margin: auto;
+
+    margin-top: 1rem;
+}
+
+.restonames{
+    width: 90vw;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.homepageIMG1{
+    width: 90vw;
+    
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.homepageIMG1 img {
+    width: 100%;
+}
+
+.chef{
+    width: 90vw;
+    
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chef1{
+    width: 49%;
+}
+.chef1 img{
+    width: 100%;
+}
+.chef2{
+    width: 49%;
+}
+.chef2 img{
+    width: 100%;
+}
+
+.contactUs{
+    width: 90vw;
+    
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    background: #e7e6e6;
+    border-radius: 12px;
+}
+
+.regInfo{
+    width: 90vw;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.footerHome{
+    width: 100%;
+    height: 34vh;
+    margin-top: 2rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 890px) {
+    .homeOffh1{
+        width: 50%;
+    }
+    .homeOffh1 span{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .homeOffnav{
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        gap: 1rem;
+    
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile view  */
+.nav1mobile{
+    width: 100vw;
+    height: 10vh;
+}
+
+.nav2mobile{
+    width: 100vw;
+    height: 10vh;
+}
+
+.homeMImg{
+    width: 100vw;
+}
+
+.addM{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+
+.addM span{
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+ }
+
+ .restoM{
+    /* width: 93vw; */
+
+   padding-left: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+
+ }
+
+ .categoryM{
+    width: 100vw;
+    margin: auto;
+    background-color: #D9D9D980;
+    /* margin-top: 1rem; */
+    padding-bottom: 1.5rem;
+}
+.homeOffh1MM{
+    width: 100vw;
+    /* margin: auto; */
+    margin-top: 1.5rem;
+    background: #D9D9D980;
+    padding-top: 1.5rem;
+
+}
+
+.homeOffh1MM span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.homeOffh1MMM{
+    width: 100vw;
+    /* margin: auto; */
+    margin-top: 1rem;
+    /* background: #D9D9D980; */
+    padding-top: 1.5rem;
+
+}
+
+.homeOffh1MMM span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.restonamesM{
+    padding-left: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.homepageIMG1M{
+    width: 95vw;
+    
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.homepageIMG1M img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.chefM{
+    width: 95vw;
+    
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.chef1M{
+    width: 100%;
+}
+.chef1M img{
+    width: 100%;
+}
+.chef2M{
+    width: 100%;
+}
+.chef2M img{
+    width: 100%;
+}
+
+.aboutM{
+    width: 95vw;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.regInfoM{
+    width: 95vw;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+

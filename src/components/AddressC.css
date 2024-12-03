@@ -1,0 +1,84 @@
+
+.AddressC{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    overflow-y: scroll;
+}
+
+.addAdd{
+    width: 20%;
+    border-style: dotted;
+    border: 1px dotted #AFAFAF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    margin-left: 2rem;
+}
+
+.fetchAdd{
+    width: 20%;
+    border: 1px solid #AFAFAF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 0;
+    margin-left: 2rem;
+    /* margin-left: 2rem; */
+}
+
+.tt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    gap: 0.4rem;
+}
+
+.tt :nth-child(1){
+   font-weight: 600;
+}
+
+.tt :nth-child(2){
+   font-size: 0.9rem;
+ }
+ .tt :nth-child(3){
+    font-size: 0.9rem;
+ }
+
+.bb{
+    display: flex;
+    margin-left: 1rem;
+    gap: 0.4rem;
+    /* flex-direction: column; */
+}
+
+.addspan{
+    font-size: 0.9rem;
+    color: #FC8A06;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .AddressC{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .addAdd{
+        width: 80%;
+        padding: 1rem;
+        margin: 0;
+    }
+    .fetchAdd{
+        width: 80%;
+        padding: 2rem 1rem 1rem 1rem;
+        margin: 0;
+        gap: 3rem;
+        justify-content: space-between;
+    }
+}

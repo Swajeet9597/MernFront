@@ -1,0 +1,59 @@
+.foodCatBoxM{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0
+    ;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    /* margin-top: 1rem; */
+
+}
+.FoodDetailsM span{
+
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+
+}
+.foodboxxM{
+    /* width: 15%; */
+    width: 13rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.foodboxxM img {
+    /* width: 100%;M */
+}
+
+.FoodDetailsM{
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #0000001A;
+    border-top: none;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.FtitleM{
+
+font-size: 0.9rem;
+font-weight: 600;
+
+}
+
+.FdescM{
+    color: #FC8A06;
+}
+
+
+@media screen and (max-width: 935px) {
+  
+}

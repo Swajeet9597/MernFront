@@ -1,0 +1,65 @@
+import React, { useState } from 'react';
+import './AddAdress.css'
+
+const AddAdress = ({setSelect,setRender,render}) => {
+
+    const [add, setAdd] = useState([{
+        address:"",
+        number:""
+    }])
+
+  function handleSave(e){
+    
+    setRender(!render)
+
+    e.preventDefault()
+    setSelect(true)
+    console.log(add);
+
+    const response = fetch(`http://localhost:8000/api/order/address`,{
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body: JSON.stringify(add)
+    })
+
+    if(response.ok){
+
+    }
+
+  }
+
+  function handleOnchange(e){
+      let name = e.target.name;
+      let value = e.target.value;
+
+      setAdd({
+        ...add,
+        [name]:value
+      })
+  }
+
+
+
+  return (
+    <div className='AddAdress'>
+      <div className="asasc">
+         <div className="asd">
+            <img src="location.png" alt="" />
+            <span>Add Address</span>
+         </div>
+         <div className="state">
+            <input onChange={handleOnchange} type="text" placeholder='State' />
+            <input onChange={handleOnchange} type="text" placeholder='City/District' />
+            <input onChange={handleOnchange} type="text" placeholder='Pin Code' />
+            <input onChange={handleOnchange} type="text" name='number' placeholder='Phone Number' />
+         </div>
+         <textarea onChange={handleOnchange} name="address" id="" cols="30" rows="10"  placeholder='Enter full address' ></textarea>
+         <div className='btnnn' ><button onClick={handleSave} >Save</button></div>
+      </div>
+    </div>
+  );
+}
+
+export default AddAdress;

@@ -1,0 +1,276 @@
+.cartboxx{
+    width: 95%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.copy img{
+    width: 100%;
+}
+
+.cartbott{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cartheading{
+    width: 100%;
+    background: #028643;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+
+}
+
+.cartheading img{
+    width: 15%;
+}
+
+.cartheading span{
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.foodcart{
+    width: 99.8%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0 1.5rem 0;
+    border: 1px solid #0000001C
+}
+
+
+.x1{
+    width: 11%;
+    /* height: 15%; */
+    background-color: #FC8A06;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 0.5rem 0 0.5rem 0;
+
+}
+
+.fooddetailscart{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: .1rem;
+
+}
+
+.fooddetailscart :nth-child(1){
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #028643;
+    margin-left: 2rem;
+   
+}
+.fooddetailscart :nth-child(2){
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: black;
+    margin-left: 2rem;
+}
+.fooddetailscart :nth-child(3){
+    font-size: 1.2rem;
+    /* font-weight: 600; */
+    margin: 0;
+    padding: 0;
+    color: black;
+
+}
+
+.foodcart img{
+    /* width: 10%; */
+    height: 3rem;
+}
+
+.total{
+    width: 99.8%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 1.5rem 0;
+    border: 1px solid #0000001C;
+    gap: 1rem;
+}
+
+.subtotal , .discount, .free{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtotal :nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.subtotal :nth-child(2){
+    font-size: 1.4rem;
+}
+
+.discount :nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.free :nth-child(1){
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.discount :nth-child(2){
+    font-size: 1.4rem;
+}
+.free :nth-child(2){
+    font-size: 1.4rem;
+}
+
+.pay{
+    width: 99.8%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 1.5rem 0;
+    border: 1px solid #0000001C;
+    gap: 1rem;
+}
+.payrs{
+    width: 80%;
+    background: #FC8A06CC;
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem ;
+    border-radius: 8px;
+
+}
+
+.payrs :nth-child(1){
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.payrs :nth-child(2){
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.choosefree{
+    width: 80%;
+    border: 1px solid #CFCFCF;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem ;
+    border-radius: 120px;
+  color: black;
+}
+
+.choosefree :nth-child(1){
+    color: black;
+}
+
+.checkout{
+    width: 99.8%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 0 1.5rem 0;
+    border: 1px solid #0000001C;
+    gap: 1rem;
+
+}
+
+.motor{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.motorl{
+    display: flex;
+    width: 45%;
+
+}
+.motorr{
+    display: flex;
+    width: 45%;
+}
+
+.motorl img{
+    width: 100%;
+}
+
+.motorr img{
+    width: 100%;
+}
+
+
+
+
+.checkoutbox{
+    width: 80%;
+    margin: auto;
+    background: #028643;
+    display: flex;
+    padding: 1rem ;
+    border-radius: 8px;
+    
+}
+
+.checkkkk{
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.checkouttttt{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.checkouttttt span{
+    margin-left: 10%;
+    color: white;
+    font-size: 1.8rem;
+}
+
+@media screen and (max-width:768px) {
+    .cartboxx{
+        width: 80%;
+        /* margin: auto; */
+    }
+}

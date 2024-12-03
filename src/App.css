@@ -1,0 +1,105 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  width: 100%;
+  height: 66%;
+  display: flex;
+
+  /* border: 0.5px solid red; */
+}
+
+.left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.right{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.footer{
+  width: 100%;
+  height: 34%;
+  /* border: 0.5 solid green; */
+}
+
+.homepage{
+  height: 93%;
+  width: 60%;
+  margin-top: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+  .homepage{
+    height: 93%;
+    width: 90%;
+    margin-top: 1.5rem;
+  }
+  .loginbox{
+    display: flex
+    ;
+        flex-direction: column;
+        justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  .main{
+    width: 100vw;
+    /* height: 100vh; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .left{
+    width: 99%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  
+  .right{
+    /* width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center; */
+    display: none;
+  }
+
+  label{
+    margin-top: 1rem;
+  }
+
+  .form .pass{
+    margin-top: 1rem;
+  }
+  .footer{
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    /* border: 0.5 solid green; */
+  }
+}
+
+

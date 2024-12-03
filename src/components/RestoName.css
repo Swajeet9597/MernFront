@@ -1,0 +1,13 @@
+.restonamess{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restonamessbox{
+    width: 15%;
+}
+
+.restonamessbox img{
+    width: 100%;
+}

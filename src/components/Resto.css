@@ -1,0 +1,14 @@
+.restbox{
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.restoimg1{
+    width: 32.5%;
+}
+
+.restoimg1 img{
+    width: 100%;
+}

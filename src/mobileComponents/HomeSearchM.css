@@ -1,0 +1,93 @@
+.HomeSearchMBox{
+    width: 93vw;
+    margin: auto;
+    background: #03081F;
+    border-radius:12px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.2rem 0 3.2rem 0;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+.HomeSearchMBox .rest{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.postcode{
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+
+ .feast {
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.headm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1px;
+}
+
+.fast{
+margin: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #FC8A06;
+}
+
+.searchM{
+   
+    position: relative;
+    width: 68%;
+}
+
+.searchMIN{
+    height: 4.5rem;
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 120px;
+}
+
+.sidearrow{
+    position: absolute;
+    width: 5rem;
+    height: 100%;
+    border-radius: 120px;
+    background: #FC8A06;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 390px) {
+
+    .feast {
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .fast{
+             margin: 0;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #FC8A06;
+        }
+
+        
+}

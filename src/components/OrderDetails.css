@@ -1,0 +1,187 @@
+.OrderDetailsbox{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.itemss{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+    overflow-y: scroll;
+}
+
+.orderl{
+    width: 60%;
+    height: 100%;
+    border: 1px solid #03081F;
+    border-radius: 12px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    /* padding: 2rem 0; */
+
+}
+
+.orderl img {
+    width: 95%;
+}
+
+.orderr{
+    width: 40%;
+}
+
+.orderItem{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.orderIteml{
+    display: flex;
+    gap: 1rem;
+}
+
+.orderIteml img{
+    width: 7%;
+    border-radius: 8px;
+}
+
+.orderItemlsub{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.orderItemlsub :nth-child(1){
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.orderItemlsub :nth-child(2){
+    font-size: 0.8rem;
+    color: #83858A;
+}
+
+.orderItemr{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #028643;
+}
+
+.orderNotes{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.orderNotes :nth-child(1){
+    font-size: 0.9rem;
+    color: #83858A;
+}
+
+.orderNotes :nth-child(2){
+    font-size: 0.9rem;
+    color: #83858A;
+    width: 97%;
+    padding: 0;
+    padding-left: 1rem;
+    margin: 0;
+}
+
+
+.orderr{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* justify-content: space-between; */
+}
+
+.addressInput{
+   display: flex; 
+   width: 100%;
+   border: 1px solid #03081F;
+   border-radius: 56px;
+   padding: 1rem 0;
+   justify-content: space-between;
+
+}
+
+.addressInputl{
+    display: flex;
+    margin-left: 1rem;
+    width: 80%;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1rem;
+}
+
+.circle{
+    width: 10%;
+    height: 90%;
+    border: 1px solid #03081F;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+    width: 50%;
+}
+
+.inadd{
+    display: flex;
+    flex-direction: column;
+}
+
+.addressInputr{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.inadd :nth-child(1){
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.inadd :nth-child(2){
+    font-size: 0.8rem;
+    color: #83858A;
+  
+}
+
+.tax{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.taxsub{
+    display: flex;
+    justify-content: space-between;
+    color: #83858A;
+}
+
+.paymentM{
+    width: 100%;
+    text-align: center;
+    background-color: #FC8A06;
+    font-size: 1rem;
+    font-weight: 600;
+}

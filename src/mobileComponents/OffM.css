@@ -1,0 +1,75 @@
+
+ 
+ .homeoOffM{
+    width: 95vw;
+    
+    margin: auto;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeOffh1M{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+.homeOffh1M span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.homeOffnavM{
+    width: auto;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
+}
+
+.homeOffnavM span{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pizzaM{
+    border: 0.5px solid #FC8A06;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 120px;
+}
+
+
+ @media only screen and (max-width: 484px) {
+
+    .homeOffh1M span{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .homeOffnavM span{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 446px) {
+
+    .homeOffh1M span{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .homeOffnavM span{
+        font-size: 1remrem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+  }
