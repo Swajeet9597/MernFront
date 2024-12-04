@@ -25,6 +25,8 @@ const AddAdress = ({setSelect,setRender,render}) => {
         body: JSON.stringify(add)
     })
 
+    console.log(response)
+
     if(response.ok){
       setRender(!render)
     }
