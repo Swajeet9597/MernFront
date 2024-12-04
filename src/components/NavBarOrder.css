@@ -67,6 +67,10 @@
 }
 
 .profile1 span{
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin: 0;
     font-size: 1.1rem;
 }

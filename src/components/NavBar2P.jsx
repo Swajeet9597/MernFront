@@ -50,7 +50,7 @@ const handleBack=()=>{
             <span>Track Order</span>
     </div>
     <div className='profile' > 
-    <div className='profile1' >
+    <div onClick={handleBack}  className='profile1' >
 
             <img src={user} alt="" className="user" />
             <span>hey {userData.name}</span>
