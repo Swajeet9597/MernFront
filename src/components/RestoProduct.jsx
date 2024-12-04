@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./RestoProduct.css";
+import {BASE_URL} from '../services/helper'
 
 const RestoProduct = ({setSelectItem,selectItem}) => {
 const [cartData,setCartData] = useState([])
@@ -30,7 +31,7 @@ const [cartData,setCartData] = useState([])
 }
 
    async function getBerg (){
-        const response = await fetch(`http://localhost:8000/api/data/burger`,{
+        const response = await fetch(`${BASE_URL}/api/data/burger`,{
             method: "GET",
         })
     
