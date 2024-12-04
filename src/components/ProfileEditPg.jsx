@@ -9,8 +9,8 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
 
     const [userData, setuserData] = useState([])
     const [editData,setEditData] = useState({
-      name:userData.name,
-      email:userData.email
+      name:userData.name || "",
+      email:userData.email || ""
     })
  
     function handleInput(e){
@@ -26,7 +26,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     async function handleSave (){
       console.log("save...")
          const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
-          method:"PUT",
+          method:"POST",
           headers:{
             "Content-Type":"application/json"
           },
