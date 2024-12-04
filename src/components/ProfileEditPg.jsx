@@ -60,7 +60,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     const [editData,setEditData] = useState({
       name:userData.name,
       email:userData.email
-    })
+    })  
   return (
     <>
      <div className="editProfileBody">
@@ -81,7 +81,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
               <div className="name_gender">
                 <div className="fname">
                   <p>Full Name</p>
-                  <input  onChange={handleInput} name='name' type="text" placeholder={userData.name}/>
+                  <input  onChange={handleInput} name='name' type="text" value={userData.name}/>
                 </div>
                 <div className="gender">
                   <p>Gender</p>
