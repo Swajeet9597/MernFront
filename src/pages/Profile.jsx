@@ -150,7 +150,7 @@ const handleBack=()=>{
 
 
 
-<div className="footerHomeOPPP">
+<div className="footerHomeOPPPH">
  <Footer/>
 </div>
 
