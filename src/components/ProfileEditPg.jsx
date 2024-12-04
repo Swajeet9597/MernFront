@@ -26,7 +26,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     async function handleSave (){
       console.log("save...")
          const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
-          method:"POST",
+          method:"PUT",
           headers:{
             "Content-Type":"application/json"
           },
