@@ -8,7 +8,10 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     }
 
     const [userData, setuserData] = useState([])
-    
+    const [editData,setEditData] = useState({
+      name:userData.name,
+      email:userData.email
+    })  
  
     function handleInput(e){
       let name = e.target.name;
@@ -16,17 +19,19 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
 
       console.log(editData)
 
-      if(editData.name == undefined || editData == undefined){
-        console.log("unnndddddd");
-      }
-
-      // setEditData({
-      //   ...editData,
-      //   [name]:value
-      // })
+      setEditData({
+        ...editData,
+        [name]:value
+      })
     }
 
     async function handleSave (){
+         if(editData.name == undefined){
+          editData.name = userData.name
+      }
+      if(editData.email == undefined){
+        editData.email = localStorage.getItem("email")
+      }
       console.log("save...")
          const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
           method:"PUT",
@@ -63,10 +68,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
       getUserData()
     },[])
 
-    const [editData,setEditData] = useState({
-      name:userData.name,
-      email:userData.email
-    })  
+
   return (
     <>
      <div className="editProfileBody">
@@ -87,7 +89,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
               <div className="name_gender">
                 <div className="fname">
                   <p>Full Name</p>
-                  <input  onChange={handleInput} name='name' type="text" value={userData.name}/>
+                  <input  onChange={handleInput} name='name' type="text" placeholder={userData.name}/>
                 </div>
                 <div className="gender">
                   <p>Gender</p>
@@ -97,7 +99,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
               <div className="email_country">
                 <div className="emailAdd">
                   <p>Email Address</p>
-                  <input onChange={handleInput} name='email' type="text" placeholder={userData.email} />
+                  <input onChange={handleInput} name='email' type="email" placeholder={userData.email} />
                 </div>
                 <div className="country">
                   <p>Country</p>
