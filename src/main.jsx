@@ -10,6 +10,7 @@ import Order from './pages/Order'
 import Address from './pages/Address'
 import Payment from './pages/Payment'
 import PaymentSuccess from './pages/PaymentSuccess'
+import Profile from './pages/Profile'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/Address' element={<Address/>}/>
         <Route path='/Payment' element={<Payment/>}/>
         <Route path='/PaymentSuccess' element={<PaymentSuccess/>}/>
+        <Route path='/Profile' element={<Profile/>}/>
 
       </Routes>
     </BrowserRouter>
