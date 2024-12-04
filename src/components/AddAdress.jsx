@@ -11,7 +11,7 @@ const AddAdress = ({setSelect,setRender,render}) => {
 
   function handleSave(e){
     
-    setRender(!render)
+    
 
     e.preventDefault()
     setSelect(true)
@@ -26,7 +26,7 @@ const AddAdress = ({setSelect,setRender,render}) => {
     })
 
     if(response.ok){
-
+      setRender(!render)
     }
 
   }
