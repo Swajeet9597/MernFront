@@ -7,6 +7,8 @@ import NavBarOrder from '../components/NavBarOrder';
 import Footer from '../components/Footer';
 import PaymentC from '../components/PaymentC';
 import NavbarM1 from '../mobileComponents/NavbarM1';
+import ProfileEditPg from '../components/ProfileEditPg';
+
 
 
 const Profile = () => {
