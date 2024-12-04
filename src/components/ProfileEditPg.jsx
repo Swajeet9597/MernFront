@@ -14,10 +14,12 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
       let name = e.target.name;
       let value = e.target.value;
 
-      setEditData({
-        ...editData,
-        [name]:value
-      })
+      console.log(editData)
+
+      // setEditData({
+      //   ...editData,
+      //   [name]:value
+      // })
     }
 
     async function handleSave (){
