@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AddAdress.css'
+import { BASE_URL } from '../services/helper';
 
 const AddAdress = ({setSelect,setRender,render}) => {
 
@@ -16,7 +17,7 @@ const AddAdress = ({setSelect,setRender,render}) => {
     setSelect(true)
     console.log(add);
 
-    const response = fetch(`http://localhost:8000/api/order/address`,{
+    const response = fetch(`${BASE_URL}/api/order/address`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './AddressC.css'
 import AddAdress from './AddAdress';
+import { BASE_URL } from '../services/helper';
 
 const AddressC = ({setSelect,render,setRender}) => {
 
@@ -11,7 +12,7 @@ const AddressC = ({setSelect,render,setRender}) => {
    }
 
     const getAdd = async()=>{
-        const response = await fetch(`http://localhost:8000/api/order/address`,{
+        const response = await fetch(`${BASE_URL}/api/order/address`,{
             method: "GET",
         })
 

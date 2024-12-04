@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Cart.css";
 import { useNavigate } from "react-router-dom";
+import { BASE_URL } from '../services/helper';
 
 
 
@@ -24,7 +25,7 @@ const Cart = ({cartData,setCartData}) => {
 
 async function handleRemove(cart){
 
-    let response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+    let response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
         method:"DELETE",
         headers:{
             'Content-Type': "application/json",
@@ -33,7 +34,7 @@ async function handleRemove(cart){
     })
 
     if (response.ok) {
-        const updatedResponse = await fetch(`http://localhost:8000/api/product/cartAdd`, {
+        const updatedResponse = await fetch(`${BASE_URL}/api/product/cartAdd`, {
           method: "GET",
         });
         if (updatedResponse.ok) {
