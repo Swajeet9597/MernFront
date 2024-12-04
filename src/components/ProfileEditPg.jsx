@@ -10,7 +10,8 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     const [userData, setuserData] = useState([])
     const [editData,setEditData] = useState({
       name:userData.name,
-      email:userData.email
+      email:userData.email,
+      older_email:localStorage.getItem("email")
     })  
  
     function handleInput(e){
@@ -40,6 +41,22 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
           },
           body: JSON.stringify(editData)
          })
+
+         if(response.ok){
+          const response = await fetch(`${BASE_URL}/api/auth/user`,{
+            method:"POST",
+            headers:{
+              "Content-Type":"application/json"
+            },
+            body: JSON.stringify(emailInfo)
+          })
+    
+          if(response.ok){
+            let data = await response.json()
+    
+            setuserData(data.msg)
+          }
+         }
     }
     
 
