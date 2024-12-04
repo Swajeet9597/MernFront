@@ -187,6 +187,92 @@ useEffect(()=>{
  <NavbarM1/>
 </div>
 
+<div className="profileBody">
+            <p className="bodyHead">
+              <img onClick={handleBack} src="arrow-left.png" alt="" />
+              <img src="backIcon.png" alt="" />
+              My Profile
+            </p>
+            <div className="body_profile">
+              <div className="profileHead">
+                <div>
+                  <img src="profilePic.png" alt="" />
+                  <p>{userData.name}</p>
+                </div>
+                <div onClick={handleEditBtn} className="editBtn">
+                  Edit
+                </div>
+              </div>
+              <div className="profileData">
+                <div className="name_gender">
+                  <div className="fname">
+                    <p>Full Name</p>
+                    <p>{userData.name}</p>
+                  </div>
+                  <div className="gender">
+                    <p>Gender</p>
+                    <p>Male</p>
+                  </div>
+                </div>
+                <div className="email_country">
+                  <div className="emailAdd">
+                    <p>Email Address</p>
+                    <p>{userData.email}</p>
+                  </div>
+                  <div className="country">
+                    <p>Country</p>
+                    <p>India</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="paymentMethod">
+              <p>Saved Payment Methods</p>
+              <div className="PaymentCards">
+                <div className="paymentCard">
+                  <img src="cardPic.png" alt="" />
+                  <div className="cardDetails">
+                    <p>xxxx xxxx xxxx 1234</p>
+                    <p>Mike Ross</p>
+                  </div>
+                  <img src="edit-3.png" alt="" />
+                </div>
+                <div className="paymentCard">
+                  <img src="cardPic.png" alt="" />
+                  <div className="cardDetails">
+                    <p>xxxx xxxx xxxx 1234</p>
+                    <p>Mike Ross</p>
+                  </div>
+                  <img src="edit-3.png" alt="" />
+                </div>
+                <div className="paymentCard">
+                  <img src="cardPic.png" alt="" />
+                  <div className="cardDetails">
+                    <p>xxxx xxxx xxxx 1234</p>
+                    <p>Mike Ross</p>
+                  </div>
+                  <img src="edit-3.png" alt="" />
+                </div>
+                <div className="addCardBtn">
+                  <img src="btnImg3.png" alt="" />
+
+                  <p>Add New Card</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {activeEditProfile ? (
+            <></>
+        ) : (
+          <div className="profileEdit">
+            <ProfileEditPg setActiveEditProfile={setActiveEditProfile} />
+          </div>
+        )}
+
+<div className="footerHomeOPPPH">
+ <Footer/>
+</div>
 
 
 
