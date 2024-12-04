@@ -8,6 +8,7 @@ const AddressC = ({setSelect,render,setRender}) => {
     const [addresses, setAddresses] = useState([])
 
     function handleOnclick(add){
+        console.log("remove")
         console.log(add)
     }
     
