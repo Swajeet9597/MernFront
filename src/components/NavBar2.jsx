@@ -57,7 +57,7 @@ const handleBack=()=>{
         <div className="navbox2">
                 <span onClick={handleHomePage} className='homespan' >Home</span>
                 <span>Special Offers</span>
-                <span handleProductPage >Restaurants</span>
+                <span  onClick={handleProductPage} >Restaurants</span>
                 <span>Track Order</span>
         </div>
         <div className='profile' > 
