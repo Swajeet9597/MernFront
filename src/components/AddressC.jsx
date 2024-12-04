@@ -7,9 +7,22 @@ const AddressC = ({setSelect,render,setRender}) => {
 
     const [addresses, setAddresses] = useState([])
 
-    function handleOnclick(add){
-        console.log("remove")
-        console.log(add)
+   async function handleOnclick(add){
+        // console.log("remove")
+        // console.log(add)
+        const response = await fetch(`${BASE_URL}/api/order/address`,{
+            method:"DELETE",
+            headers:{
+                "Content-Type":"application/json",
+            },
+            body:JSON.stringify(add)
+        })
+
+        console.log("del",response)
+
+        if(response.ok){
+
+        }
     }
     
    function handleAdd(){
