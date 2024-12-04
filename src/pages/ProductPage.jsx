@@ -21,6 +21,7 @@ import RestoNameMP from '../mobileComponents/RestoNameMP';
 import RespoCustomerReview from '../mobileComponents/RespoCustomerReview';
 import RestoProductAndCart from '../components/RestoProductAndCart';
 import Cart from '../components/Cart';
+import { BASE_URL } from '../services/helper';
 
 
 const ProductPage = () => {
@@ -33,7 +34,7 @@ const ProductPage = () => {
 
 
   async function getCartData(){
-    const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+    const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
         method: "GET",
     })
 
