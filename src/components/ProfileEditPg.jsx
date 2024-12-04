@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./ProfileEditPg.css"
 import { BASE_URL } from '../services/helper';
 
-const ProfileEditPg = ({setActiveEditProfile}) => {
+const ProfileEditPg = ({setActiveEditProfile,render,setRender}) => {
     function handleA(){
         setActiveEditProfile(true)
     }
@@ -28,6 +28,8 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
 
     async function handleSave (){
 
+
+
       setActiveEditProfile(true)
 
          if(editData.name == undefined){
@@ -49,6 +51,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
          })
 
          if(response.ok){
+          setRender(!render)
           const response = await fetch(`${BASE_URL}/api/auth/user`,{
             method:"POST",
             headers:{

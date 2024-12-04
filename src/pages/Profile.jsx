@@ -16,6 +16,8 @@ const Profile = () => {
 
     const [activeEditProfile, setActiveEditProfile] = useState(true);
 
+    const [render,setRender] = useState(true)
+
     
     const navigate = useNavigate()
     const [userData, setuserData] = useState([])
@@ -67,6 +69,9 @@ const handleBack=()=>{
     
       },[]);
 
+useEffect(()=>{
+  getUserData()
+},[render])
 useEffect(()=>{
   getUserData()
 },[])
@@ -163,7 +168,7 @@ useEffect(()=>{
             <></>
         ) : (
           <div className="profileEdit">
-            <ProfileEditPg setActiveEditProfile={setActiveEditProfile} />
+            <ProfileEditPg render={render} SetRender={setRender} setActiveEditProfile={setActiveEditProfile} />
           </div>
         )}
 
