@@ -16,9 +16,9 @@ const Profile = () => {
 
     const [activeEditProfile, setActiveEditProfile] = useState(true);
 
-    const [userData, setuserData] = useState([])
-
+    
     const navigate = useNavigate()
+    const [userData, setuserData] = useState([])
 
     const emailInfo = {
         "email": localStorage.getItem("email")

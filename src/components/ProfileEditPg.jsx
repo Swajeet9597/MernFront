@@ -1,10 +1,36 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ProfileEditPg.css"
+import { BASE_URL } from '../services/helper';
 
 const ProfileEditPg = ({setActiveEditProfile}) => {
     function handleA(){
         setActiveEditProfile(true)
     }
+
+    const [userData, setuserData] = useState([])
+
+    const emailInfo = {
+        "email": localStorage.getItem("email")
+    }
+
+    async function getUserData () {
+      const response = await fetch(`${BASE_URL}/api/auth/user`,{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(emailInfo)
+      })
+
+      if(response.ok){
+        let data = await response.json()
+
+        setuserData(data.msg)
+      }
+    }
+    useEffect(()=>{
+      getUserData()
+    },[])
   return (
     <>
      <div className="editProfileBody">
@@ -17,7 +43,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
             <div className="profileHead">
               <div>
                 <img src="profilePic.png" alt="" />
-                <p>Mike Ross</p>
+                <p>{userData.name}</p>
               </div>
               <div className="editBtn">Save</div>
             </div>
@@ -25,21 +51,21 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
               <div className="name_gender">
                 <div className="fname">
                   <p>Full Name</p>
-                  <input type="text" />
+                  <input type="text" placeholder={userData.name}/>
                 </div>
                 <div className="gender">
                   <p>Gender</p>
-                  <input type="text" />
+                  <input type="text" value="Male" />
                 </div>
               </div>
               <div className="email_country">
                 <div className="emailAdd">
                   <p>Email Address</p>
-                  <input type="text" />
+                  <input type="text" placeholder={userData.email} />
                 </div>
                 <div className="country">
                   <p>Country</p>
-                  <input type="text" />
+                  <input type="text" value="India" />
                 </div>
               </div>
             </div>
