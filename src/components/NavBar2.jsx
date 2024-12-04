@@ -11,6 +11,15 @@ const NavBar2 = () => {
 
         const navigate = useNavigate()
 
+        function handleHomePage(){
+                navigate('/Home')
+        }
+
+        function handleProductPage(){
+                navigate('/Product')
+        }
+
+
         
 const handleBack=()=>{
         navigate('/Profile')
@@ -46,9 +55,9 @@ const handleBack=()=>{
                 <img className='navlogo' src={logo} />
         </div>
         <div className="navbox2">
-                <span className='homespan' >Home</span>
+                <span onClick={handleHomePage} className='homespan' >Home</span>
                 <span>Special Offers</span>
-                <span>Restaurants</span>
+                <span handleProductPage >Restaurants</span>
                 <span>Track Order</span>
         </div>
         <div className='profile' > 

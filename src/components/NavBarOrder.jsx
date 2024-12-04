@@ -8,6 +8,14 @@ const NavBarOrder = () => {
         const [userData, setuserData] = useState([])
 
         const navigate = useNavigate()
+        
+        function handleHomePage(){
+                navigate('/Home')
+        }
+
+        function handleProductPage(){
+                navigate('/Product')
+        }
 
         
 const handleBack=()=>{
@@ -44,9 +52,9 @@ const handleBack=()=>{
                 <img className='navlogo' src={logo} />
         </div>
         <div className="navbox2">
-                <span className='homespanO' >Home</span>
+                <span onClick={handleHomePage}  className='homespanO' >Home</span>
                 <span>Special Offers</span>
-                <span>Restaurants</span>
+                <span handleProductPage >Restaurants</span>
                 <span>Track Order</span>
         </div>
         <div className='profile' > 

@@ -8,6 +8,14 @@ const NavBar2P = () => {
         const [userData, setuserData] = useState([])
 
         const navigate = useNavigate()
+        
+        function handleHomePage(){
+                navigate('/Home')
+        }
+        function handleProductPage(){
+                navigate('/Product')
+        }
+
 
         
 const handleBack=()=>{
@@ -44,9 +52,9 @@ const handleBack=()=>{
             <img className='navlogo' src={logo} />
     </div>
     <div className="navbox2">
-            <span  >Home</span>
+            <span onClick={handleHomePage}   >Home</span>
             <span>Special Offers</span>
-            <span className='homespanP' >Restaurants</span>
+            <span handleProductPage className='homespanP' >Restaurants</span>
             <span>Track Order</span>
     </div>
     <div className='profile' > 
