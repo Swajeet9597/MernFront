@@ -16,6 +16,10 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
 
       console.log(editData)
 
+      if(editData.name == undefined || editData == undefined){
+        console.log("unnndddddd");
+      }
+
       // setEditData({
       //   ...editData,
       //   [name]:value
