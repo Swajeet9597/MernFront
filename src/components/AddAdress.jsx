@@ -9,7 +9,7 @@ const AddAdress = ({setSelect,setRender,render}) => {
         number:""
     }])
 
-  function handleSave(e){
+  async function handleSave(e){
     
     
 
@@ -17,7 +17,7 @@ const AddAdress = ({setSelect,setRender,render}) => {
     setSelect(true)
     console.log(add);
 
-    const response = fetch(`${BASE_URL}/api/order/address`,{
+    const response = await fetch(`${BASE_URL}/api/order/address`,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
