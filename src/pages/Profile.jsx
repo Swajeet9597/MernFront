@@ -13,6 +13,13 @@ const Profile = () => {
 
     const [activeEditProfile, setActiveEditProfile] = useState(true);
 
+    const navigate = useNavigate()
+
+const handleBack=()=>{
+    navigate('/home')
+}
+
+
     const handleEditBtn = () => {
       setActiveEditProfile(false);
       // console.log("active");
