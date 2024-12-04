@@ -6,6 +6,7 @@ import LOGO from '../assets/LOGO.png'
 import line from '../assets/Line.png'
 import google from '../assets/Google.png'
 import { useNavigate } from 'react-router-dom'
+import {BASE_URL} from '../services/helper'
 const Signup = () => {
   const navigate = useNavigate();
 
@@ -14,7 +15,7 @@ const Signup = () => {
     console.log("Submitting user data:", user);
   
     try {
-      const response = await fetch(`http://localhost:8000/api/auth/signup`, {
+      const response = await fetch(`${BASE_URL}/api/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

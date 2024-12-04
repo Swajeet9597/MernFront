@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from "react";
 import './RestoPM.css'
 
+
+
 const RestoPM = ({cartData, setCartData}) => {
 
     const[burger,setBurger] = useState([])
@@ -15,7 +17,7 @@ const RestoPM = ({cartData, setCartData}) => {
     //    title:b.title,
     //    price:b.price
     // })
-    const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+    const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
       method:"POST",
       headers:{
         "Content-Type": "application/json",
@@ -24,7 +26,7 @@ const RestoPM = ({cartData, setCartData}) => {
     })
    
     if (response.ok) {
-        const updatedResponse = await fetch(`http://localhost:8000/api/product/cartAdd`, {
+        const updatedResponse = await fetch(`${BASE_URL}/api/product/cartAdd`, {
           method: "GET",
         });
         if (updatedResponse.ok) {
@@ -37,7 +39,7 @@ const RestoPM = ({cartData, setCartData}) => {
    }
 
    async function getBerg (){
-        const response = await fetch(`http://localhost:8000/api/data/burger`,{
+        const response = await fetch(`${BASE_URL}/api/data/burger`,{
             method: "GET",
         })
     
@@ -55,7 +57,7 @@ const RestoPM = ({cartData, setCartData}) => {
 
 
    async function getFries (){
-    const response = await fetch(`http://localhost:8000/api/data/fries`,{
+    const response = await fetch(`${BASE_URL}/api/data/fries`,{
         method: "GET",
     })
 
@@ -72,7 +74,7 @@ const RestoPM = ({cartData, setCartData}) => {
 
 
 async function getCold (){
-    const response = await fetch(`http://localhost:8000/api/data/colddrinks`,{
+    const response = await fetch(`${BASE_URL}/api/data/colddrinks`,{
         method: "GET",
     })
 
