@@ -39,7 +39,11 @@
 }
 
 .profileEdit{
-  width: 90vw;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(47, 47, 47, 0.75);
+  position: fixed;
+  top: 0;
   margin: auto;
 
 }
