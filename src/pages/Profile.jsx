@@ -274,7 +274,7 @@ useEffect(()=>{
             <></>
         ) : (
           <div className="profileEdit">
-            <ProfileEditPg setActiveEditProfile={setActiveEditProfile} />
+            <ProfileEditPg handleRender={handleRender}  setActiveEditProfile={setActiveEditProfile} />
           </div>
         )}
 
