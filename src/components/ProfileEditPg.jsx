@@ -8,6 +8,31 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     }
 
     const [userData, setuserData] = useState([])
+    const [editData,setEditData] = useState({
+      name:userData.name,
+      email:userData.email
+    })
+ 
+    function handleInput(e){
+      let name = e.target.name;
+      let value = e.target.value;
+
+      setEditData({
+        ...editData,
+        [name]:value
+      })
+    }
+
+    async function handleSave (){
+         const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
+          method:"PUT",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body: JSON.stringify(editData)
+         })
+    }
+    
 
     const emailInfo = {
         "email": localStorage.getItem("email")
@@ -45,13 +70,13 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
                 <img src="profilePic.png" alt="" />
                 <p>{userData.name}</p>
               </div>
-              <div className="editBtn">Save</div>
+              <div onClick={handleSave} className="editBtn">Save</div>
             </div>
             <div className="profileData">
               <div className="name_gender">
                 <div className="fname">
                   <p>Full Name</p>
-                  <input type="text" placeholder={userData.name}/>
+                  <input  onChange={handleInput} name='name' type="text" placeholder={userData.name}/>
                 </div>
                 <div className="gender">
                   <p>Gender</p>
@@ -61,7 +86,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
               <div className="email_country">
                 <div className="emailAdd">
                   <p>Email Address</p>
-                  <input type="text" placeholder={userData.email} />
+                  <input onChange={handleInput} name='email' type="text" placeholder={userData.email} />
                 </div>
                 <div className="country">
                   <p>Country</p>
