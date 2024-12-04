@@ -6,6 +6,10 @@ import { BASE_URL } from '../services/helper';
 const AddressC = ({setSelect,render,setRender}) => {
 
     const [addresses, setAddresses] = useState([])
+
+    function handleOnclick(add){
+        console.log(add)
+    }
     
    function handleAdd(){
     setSelect(false)
@@ -48,7 +52,7 @@ const AddressC = ({setSelect,render,setRender}) => {
                 <div className="bb">
                     <span className='addspan' >Edit</span>
                     <img src="Line25.png" alt="" />
-                    <span className='addspan'>Remove</span>
+                    <span onClick={()=>handleOnclick(add)} className='addspan'>Remove</span>
                 </div>
              </div>
          ))}
