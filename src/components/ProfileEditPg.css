@@ -1,12 +1,13 @@
 .editProfileBody {
     margin-top: 3rem;
     /* border: 1px solid black; */
-    width: 90%;
+    width: 92%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     background-color: white;
+    padding: 2rem;
   } 
   
   .bodyHead >:nth-child(2){
