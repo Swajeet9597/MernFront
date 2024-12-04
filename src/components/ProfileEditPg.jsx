@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./ProfileEditPg.css"
 import { BASE_URL } from '../services/helper';
 
-const ProfileEditPg = ({setActiveEditProfile,render,setRender}) => {
+const ProfileEditPg = ({setActiveEditProfile,handleRender}) => {
     function handleA(){
         setActiveEditProfile(true)
     }
@@ -51,7 +51,7 @@ const ProfileEditPg = ({setActiveEditProfile,render,setRender}) => {
          })
 
          if(response.ok){
-          setRender(!render)
+          handleRender()
           const response = await fetch(`${BASE_URL}/api/auth/user`,{
             method:"POST",
             headers:{

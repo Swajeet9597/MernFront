@@ -18,6 +18,10 @@ const Profile = () => {
 
     const [render,setRender] = useState(true)
 
+    function handleRender(){
+      setRender(!render)
+    }
+
     
     const navigate = useNavigate()
     const [userData, setuserData] = useState([])
@@ -37,7 +41,6 @@ const Profile = () => {
 
       if(response.ok){
         let data = await response.json()
-
         setuserData(data.msg)
       }
     }
@@ -168,7 +171,7 @@ useEffect(()=>{
             <></>
         ) : (
           <div className="profileEdit">
-            <ProfileEditPg render={render} SetRender={setRender} setActiveEditProfile={setActiveEditProfile} />
+            <ProfileEditPg handleRender={handleRender} setActiveEditProfile={setActiveEditProfile} />
           </div>
         )}
 
