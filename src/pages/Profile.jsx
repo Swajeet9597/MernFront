@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import PaymentC from '../components/PaymentC';
 import NavbarM1 from '../mobileComponents/NavbarM1';
 import ProfileEditPg from '../components/ProfileEditPg';
+import { BASE_URL } from '../services/helper';
 
 
 
@@ -15,7 +16,29 @@ const Profile = () => {
 
     const [activeEditProfile, setActiveEditProfile] = useState(true);
 
+    const [userData, setuserData] = useState([])
+
     const navigate = useNavigate()
+
+    const emailInfo = {
+        "email": localStorage.getItem("email")
+    }
+
+    async function getUserData () {
+      const response = await fetch(`${BASE_URL}/api/auth/user`,{
+        method:"POST",
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body: JSON.stringify(emailInfo)
+      })
+
+      if(response.ok){
+        let data = await response.json()
+
+        setuserData(data.msg)
+      }
+    }
 
 const handleBack=()=>{
     navigate('/home')
@@ -44,7 +67,9 @@ const handleBack=()=>{
     
       },[]);
 
-
+useEffect(()=>{
+  getUserData()
+},[])
 
   return (
   <>
@@ -69,7 +94,7 @@ const handleBack=()=>{
               <div className="profileHead">
                 <div>
                   <img src="profilePic.png" alt="" />
-                  <p>Mike Ross</p>
+                  <p>{userData.name}</p>
                 </div>
                 <div onClick={handleEditBtn} className="editBtn">
                   Edit
@@ -79,7 +104,7 @@ const handleBack=()=>{
                 <div className="name_gender">
                   <div className="fname">
                     <p>Full Name</p>
-                    <p>mike ross</p>
+                    <p>{userData.name}</p>
                   </div>
                   <div className="gender">
                     <p>Gender</p>
@@ -89,7 +114,7 @@ const handleBack=()=>{
                 <div className="email_country">
                   <div className="emailAdd">
                     <p>Email Address</p>
-                    <p>mikeross@gmail.com</p>
+                    <p>{userData.email}</p>
                   </div>
                   <div className="country">
                     <p>Country</p>

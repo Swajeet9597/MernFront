@@ -25,6 +25,8 @@ const Login = () => {
 
     if(response.ok){
        navigate("/Home")
+       localStorage.setItem("email",entereInfo.email)
+
     }
     } catch (error) {
       console.log(error)
