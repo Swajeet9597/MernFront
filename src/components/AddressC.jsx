@@ -21,7 +21,14 @@ const AddressC = ({setSelect,render,setRender}) => {
         console.log("del",response)
 
         if(response.ok){
-
+            const response = await fetch(`${BASE_URL}/api/order/address`,{
+                method: "GET",
+            })
+    
+            if(response.ok){
+                let data = await response.json()
+                setAddresses(data.msg)
+            }
         }
     }
     
