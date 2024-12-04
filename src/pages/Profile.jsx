@@ -189,8 +189,8 @@ useEffect(()=>{
 
 <div className="profileBody">
             <p className="bodyHeaddd">
-              <img onClick={handleBack} src="arrow-left.png" alt="" />
-              <img src="backIcon.png" alt="" />
+              <img  src="arrow-left.png" alt="" />
+              <img onClick={handleBack} src="backIcon.png" alt="" />
               My Profile
             </p>
             <div className="body_profile">

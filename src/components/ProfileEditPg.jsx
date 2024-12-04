@@ -18,7 +18,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
       let name = e.target.name;
       let value = e.target.value;
 
-      console.log(editData)
+      console.log(editData)   
 
       setEditData({
         ...editData,
@@ -27,7 +27,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     }
 
     async function handleSave (){
-      
+
       setActiveEditProfile(true)
 
          if(editData.name == undefined){
@@ -36,6 +36,8 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
       if(editData.email == undefined){
         editData.email = localStorage.getItem("email")
       }
+
+
       console.log("save...")
          const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
           method:"PUT",
