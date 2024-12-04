@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './NavBar2P.css'
 import logo from '../assets/LOGO.png'
 import user from '../assets/User.png'
