@@ -1,12 +1,15 @@
 import React from 'react'
 import "./ProfileEditPg.css"
 
-const ProfileEditPg = () => {
+const ProfileEditPg = ({setActiveEditProfile}) => {
+    function handleA(){
+        setActiveEditProfile(true)
+    }
   return (
     <>
      <div className="editProfileBody">
           <p className="bodyHead">
-            <img src="arrow-left.png" alt="" /> 
+            <img onClick={handleA} src="arrow-left.png" alt="" /> 
             <img src="backIcon.png" alt="" />
              My Profile
           </p>
@@ -81,4 +84,4 @@ const ProfileEditPg = () => {
   )
 }
 
-export default ProfileEditPg
+export default ProfileEditPg
