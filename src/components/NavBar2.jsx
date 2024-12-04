@@ -3,6 +3,7 @@ import './NavBar2.css'
 import logo from '../assets/LOGO.png'
 import user from '../assets/User.png'
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../services/helper';
 const NavBar2 = () => {
 
 
