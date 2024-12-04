@@ -58,7 +58,7 @@ const handleBack=()=>{
 </div>
 
 
-        {activeEditProfile ? (
+      
           <div className="profileBody">
             <p className="bodyHead">
               <img onClick={handleBack} src="arrow-left.png" alt="" />
@@ -133,6 +133,9 @@ const handleBack=()=>{
               </div>
             </div>
           </div>
+
+          {activeEditProfile ? (
+            <></>
         ) : (
           <div className="profileEdit">
             <ProfileEditPg setActiveEditProfile={setActiveEditProfile} />
