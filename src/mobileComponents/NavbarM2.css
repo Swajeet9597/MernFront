@@ -33,11 +33,17 @@
     margin-left: 0.5rem;
 }
 .n2_1 span{
-    width: 70%;
-    /* height: 100%; */
+    /* width: 70%;
     margin: 0;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 600; */
+    width: 60%;
+        margin: 0;
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
 }
 
 .n2_2{
@@ -86,11 +92,13 @@
     font-weight: 600;
 }
 .n2_1 span{
-    width: 70%;
-    /* height: 100%; */
+    width: 60%;
     margin: 0;
     font-size: 1.9rem;
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
   }
@@ -108,11 +116,13 @@
     font-weight: 600;
 }
 .n2_1 span{
-    width: 70%;
-    /* height: 100%; */
+    width: 60%;
     margin: 0;
     font-size: 1.9rem;
     font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .n2_1 img{
     width: 60%;
