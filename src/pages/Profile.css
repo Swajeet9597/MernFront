@@ -1,340 +1,339 @@
 .profileMainContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.profileNavbar {
+  height: 20vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  gap: 2rem;
+  margin: auto;
+}
+
+.profileNavbar1 {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid #0000001A; */
+  background: #fafafa;
+  border-bottom-left-radius: 0.85rem;
+  border-bottom-right-radius: 0.85rem;
+}
+
+.profileNavbar2 {
+  height: 60%;
+  /* border: 1px solid yellow; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profileEdit{
+  width: 90vw;
+  margin: auto;
+
+}
+
+.profileBody {
+  margin-top: 3rem;
+  /* border: 1px solid black; */
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bodyHead >:nth-child(2){
+  display: none;
+}
+
+.bodyHead {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.body_profile {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.profileHead {
+  width: 100%;
+  height: 7rem;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileHead :nth-child(1) > img {
+  width: 35%;
+}
+
+.profileHead :nth-child(1) {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 1rem;
+  font-weight: 500;
+  /* margin-left: 1rem; */
+}
+.editBtn {
+  height: 50%;
+  width: 10%;
+  background-color: #fc8a06;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+  color: #fafafa;
+}
+
+.PaymetFooter {
+  width: 100vw;
+  height: 40vh;
+}
+
+.profileData {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid black;
+}
+
+.name_gender {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fname {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.fname :nth-child(2) {
+  width: 97%;
+  /* border: 1px solid green; */
+  height: 3.5rem;
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 0.7rem;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.gender {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.gender :nth-child(2) {
+  width: 97%;
+  /* border: 1px solid green; */
+  background-color: #f9f9f9;
+  border-radius: 0.7rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.email_country {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.emailAdd {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.emailAdd :nth-child(2) {
+  width: 97%;
+  background-color: #f9f9f9;
+  border-radius: 0.7rem;
+  /* border: 1px solid green; */
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.country {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.country :nth-child(2) {
+  width: 97%;
+  /* border: 1px solid green; */
+  background-color: #f9f9f9;
+  border-radius: 0.7rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.paymentMethod {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.paymentMethod > p {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: 500;
+  /* border: 1px solid black; */
+}
+
+.PaymentCards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentCard {
+  font-size: 1.3rem;
+  width: 23%;
+  /* border: 1px solid black ; */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  /* padding: 1rem; */
+  height: 6rem;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+  border: 0.5px solid #00000080;
+  border-radius: 0.7rem;
+}
+
+.addCardBtn {
+  font-size: 1.3rem;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black ; */
+  height: 6rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  gap: 1rem;
+  border: 0.5px solid #00000080;
+  border-radius: 0.7rem;
+}
+
+@media screen and (max-width: 768px) {
   .profileNavbar {
-    height: 20vh;
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vw;
-    gap: 2rem;
-    margin: auto;
-  }
-  
-  .profileNavbar1 {
-    /* border: 1px solid red; */
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 1px solid #0000001A; */
-    background: #fafafa;
-    border-bottom-left-radius: 0.85rem;
-    border-bottom-right-radius: 0.85rem;
-  }
-  
-  .profileNavbar2 {
-    height: 60%;
-    /* border: 1px solid yellow; */
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .profileEdit{
-    width: 90vw;
-    margin: auto;
-  
-  }
-  
-  .profileBody {
-    margin-top: 3rem;
-    /* border: 1px solid black; */
-    width: 90vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .bodyHead >:nth-child(2){
     display: none;
   }
-  
-  .bodyHead {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-  
-  .body_profile {
-    width: 100%;
-    /* border: 1px solid black; */
-  }
-  
-  .profileHead {
-    width: 100%;
-    height: 7rem;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .profileHead :nth-child(1) > img {
-    width: 35%;
-  }
-  
-  .profileHead :nth-child(1) {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    gap: 1rem;
-    font-weight: 500;
-    /* margin-left: 1rem; */
-  }
-  .editBtn {
-    height: 50%;
-    width: 10%;
-    background-color: #fc8a06;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    border-radius: 0.7rem;
-    color: #fafafa;
-  }
-  
+
   .PaymetFooter {
-    width: 100vw;
-    height: 40vh;
+    display: none;
   }
-  
+
   .profileData {
-    /* border: 1px solid black; */
-    width: 100%;
-    display: flex;
-    margin-top: 1.5rem;
-    font-size: 1.3rem;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid black;
-  }
-  
-  .name_gender {
-    width: 48%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
   }
-  
-  .fname {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  
-  .fname :nth-child(2) {
-    width: 97%;
-    /* border: 1px solid green; */
-    height: 3.5rem;
-    display: flex;
-    background-color: #f9f9f9;
-    border-radius: 0.7rem;
-    align-items: center;
-    padding-left: 1rem;
-  }
-  
-  .gender {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  
-  .gender :nth-child(2) {
-    width: 97%;
-    /* border: 1px solid green; */
-    background-color: #f9f9f9;
-    border-radius: 0.7rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-  }
-  
+
+  .name_gender,
   .email_country {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .emailAdd {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  
-  .emailAdd :nth-child(2) {
-    width: 97%;
-    background-color: #f9f9f9;
-    border-radius: 0.7rem;
-    /* border: 1px solid green; */
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-  }
-  
-  .country {
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-  }
-  
-  .country :nth-child(2) {
-    width: 97%;
-    /* border: 1px solid green; */
-    background-color: #f9f9f9;
-    border-radius: 0.7rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1rem;
-  }
-  
-  .paymentMethod {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .paymentMethod > p {
     width: 100%;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    font-size: 1.7rem;
-    font-weight: 500;
-    /* border: 1px solid black; */
   }
-  
+
   .PaymentCards {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto;
+    gap: 1.2rem;
   }
-  
+
   .paymentCard {
     font-size: 1.3rem;
-    width: 23%;
-    /* border: 1px solid black ; */
+    width: 100%;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    /* padding: 1rem; */
+    padding: 1rem;
     height: 6rem;
     justify-content: space-evenly;
     font-size: 1.2rem;
     border: 0.5px solid #00000080;
     border-radius: 0.7rem;
   }
-  
   .addCardBtn {
-    font-size: 1.3rem;
-    width: 23%;
+    
+    width: 100%;
+    /* border: 1px solid black; */
     display: flex;
     align-items: center;
-    /* border: 1px solid black ; */
+    gap: 0.5rem;
+    padding: 1rem;
     height: 6rem;
-    font-size: 1.2rem;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-evenly;
+    font-size: 1.7rem;
     border: 0.5px solid #00000080;
     border-radius: 0.7rem;
   }
-  
-  @media screen and (max-width: 768px) {
-    .profileNavbar {
-      display: none;
-    }
-  
-    .PaymetFooter {
-      display: none;
-    }
-  
-    .profileData {
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .name_gender,
-    .email_country {
-      width: 100%;
-    }
-  
-    .PaymentCards {
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-direction: column;
-      margin: auto;
-      gap: 1.2rem;
-    }
-  
-    .paymentCard {
-      font-size: 1.3rem;
-      width: 100%;
-      /* border: 1px solid black; */
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem;
-      height: 6rem;
-      justify-content: space-evenly;
-      font-size: 1.2rem;
-      border: 0.5px solid #00000080;
-      border-radius: 0.7rem;
-    }
-    .addCardBtn {
-      
-      width: 100%;
-      /* border: 1px solid black; */
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem;
-      height: 6rem;
-      justify-content: space-evenly;
-      font-size: 1.7rem;
-      border: 0.5px solid #00000080;
-      border-radius: 0.7rem;
-    }
-    .paymentMethod {
-      /* border: 1px solid black;  */
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    
-    .editBtn {
-      height: 50%;
-      width: 18%;
-    }
-    
-    .bodyHead >:nth-child(1){
-      display:none ;
-    }
-    .bodyHead >:nth-child(2){
-      display:block ;
-      width: 5%;
-      margin-right: 1rem;
-    }
-  
-    .cardDetails {
-      display: flex;
+  .paymentMethod {
+    /* border: 1px solid black;  */
+    display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
-}
-  
+    gap: 2rem;
   }
+  
+  .editBtn {
+    height: 50%;
+    width: 18%;
+  }
+  
+  .bodyHead >:nth-child(1){
+    display:none ;
+  }
+  .bodyHead >:nth-child(2){
+    display:block ;
+    width: 5%;
+    margin-right: 1rem;
+  }
+
+  .cardDetails {
+    display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+}
