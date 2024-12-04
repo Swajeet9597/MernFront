@@ -9,7 +9,7 @@ const [cartData,setCartData] = useState([])
    const[cold,setCold] = useState([])
 
    async function handleAddCart(item){
-    const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+    const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
       method:"POST",
       headers:{
         "Content-Type": "application/json",
@@ -18,7 +18,7 @@ const [cartData,setCartData] = useState([])
     })
    
     if (response.ok) {
-        const updatedResponse = await fetch(`http://localhost:8000/api/product/cartAdd`, {
+        const updatedResponse = await fetch(`${BASE_URL}/api/product/cartAdd`, {
           method: "GET",
         });
         if (updatedResponse.ok) {
@@ -46,7 +46,7 @@ const [cartData,setCartData] = useState([])
 
    }
    async function getFries (){
-    const response = await fetch(`http://localhost:8000/api/data/fries`,{
+    const response = await fetch(`${BASE_URL}/api/data/fries`,{
         method: "GET",
     })
 
@@ -63,7 +63,7 @@ const [cartData,setCartData] = useState([])
 
 
 async function getCold (){
-    const response = await fetch(`http://localhost:8000/api/data/colddrinks`,{
+    const response = await fetch(`${BASE_URL}/api/data/colddrinks`,{
         method: "GET",
     })
 

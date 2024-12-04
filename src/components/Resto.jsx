@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import './Resto.css'
+import { BASE_URL } from '../services/helper';
 const Resto = () => {
 
   const [exdeal, setExdeal] = useState([])
 
   const getData = async() =>{
-    const response = await fetch(`http://localhost:8000/api/data/exdeal`,{
+    const response = await fetch(`${BASE_URL}/api/data/exdeal`,{
       method: "GET",
 
     })

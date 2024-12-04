@@ -1,6 +1,7 @@
 import React, { useEffect,useState } from "react";
 import "./OrderDetails.css";
 import { useNavigate } from "react-router-dom";
+import { BASE_URL } from '../services/helper';
 
 const OrderDetails = () => {
 
@@ -46,7 +47,7 @@ const OrderDetails = () => {
 
     const getCartData = async() =>{
         try {
-            const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+            const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
                 method:"GET"
             })
             if(response.ok){

@@ -2,6 +2,7 @@ import React from 'react';
 import './PaymentC.css'
 import { useNavigate } from 'react-router-dom';
 import { useState,useEffect } from 'react';
+import { BASE_URL } from '../services/helper';
 
 const PaymentC = () => {
     const[cartData,setCartData] = useState([])
@@ -23,7 +24,7 @@ const PaymentC = () => {
     
     const getCartData = async() =>{
         try {
-            const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+            const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
                 method:"GET"
             })
             if(response.ok){

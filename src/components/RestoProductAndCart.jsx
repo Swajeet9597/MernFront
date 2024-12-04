@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './RestoProductAndCart.css'
 import Cart from "./Cart";
+import {BASE_URL} from '../services/helper'
 
 const RestoProductAndCart = ({selectItem,setSelectItem}) => {
     const [cartData,setCartData] = useState([])
@@ -10,7 +11,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
         
 
    async function handleAddCart(item){
-        const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+        const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
           method:"POST",
           headers:{
             "Content-Type": "application/json",
@@ -19,7 +20,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
         })
        
         if (response.ok) {
-            const updatedResponse = await fetch(`http://localhost:8000/api/product/cartAdd`, {
+            const updatedResponse = await fetch(`${BASE_URL}/api/product/cartAdd`, {
               method: "GET",
             });
             if (updatedResponse.ok) {
@@ -34,7 +35,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
   
 // this function for intial level fetching.....  for 1st time when refrash
     async function getCartData(){
-        const response = await fetch(`http://localhost:8000/api/product/cartAdd`,{
+        const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
             method: "GET",
         })
 
@@ -48,7 +49,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
     }
 
     async function getBerg() {
-        const response = await fetch(`http://localhost:8000/api/data/burger`, {
+        const response = await fetch(`${BASE_URL}/api/data/burger`, {
             method: "GET",
         })
 
@@ -63,7 +64,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
 
     }
     async function getFries() {
-        const response = await fetch(`http://localhost:8000/api/data/fries`, {
+        const response = await fetch(`${BASE_URL}/api/data/fries`, {
             method: "GET",
         })
 
@@ -80,7 +81,7 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
 
 
     async function getCold() {
-        const response = await fetch(`http://localhost:8000/api/data/colddrinks`, {
+        const response = await fetch(`${BASE_URL}/api/data/colddrinks`, {
             method: "GET",
         })
 
