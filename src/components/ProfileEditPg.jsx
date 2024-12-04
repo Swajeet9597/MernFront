@@ -27,6 +27,9 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     }
 
     async function handleSave (){
+      
+      setActiveEditProfile(true)
+
          if(editData.name == undefined){
           editData.name = userData.name
       }
