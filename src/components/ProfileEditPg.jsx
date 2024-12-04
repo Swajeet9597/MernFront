@@ -36,7 +36,8 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
       if(editData.email == undefined){
         editData.email = localStorage.getItem("email")
       }
-
+        
+      localStorage.setItem("email",editData.email)
 
       console.log("save...")
          const response = await fetch(`${BASE_URL}/api/auth/useredit`,{
