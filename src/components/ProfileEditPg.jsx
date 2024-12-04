@@ -8,10 +8,7 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
     }
 
     const [userData, setuserData] = useState([])
-    const [editData,setEditData] = useState({
-      name:userData.name || "",
-      email:userData.email || ""
-    })
+    
  
     function handleInput(e){
       let name = e.target.name;
@@ -54,9 +51,16 @@ const ProfileEditPg = ({setActiveEditProfile}) => {
         setuserData(data.msg)
       }
     }
+
+
     useEffect(()=>{
       getUserData()
     },[])
+
+    const [editData,setEditData] = useState({
+      name:userData.name,
+      email:userData.email
+    })
   return (
     <>
      <div className="editProfileBody">
