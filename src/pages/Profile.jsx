@@ -218,7 +218,9 @@ useEffect(()=>{
 
 </> : <>
 
-<div className="nav1mobile">
+          {activeEditProfile ? (
+            <>
+            <div className="nav1mobile">
  <NavbarM1/>
 </div>
 
@@ -305,17 +307,18 @@ useEffect(()=>{
             </div>
           </div>
 
-          {activeEditProfile ? (
-            <></>
+          <div className="footerHomeOPPPH">
+ <Footer/>
+</div>
+            
+            </>
         ) : (
           <div className="profileEdit">
             <ProfileEditPg handleRender={handleRender}  setActiveEditProfile={setActiveEditProfile} />
           </div>
         )}
 
-<div className="footerHomeOPPPH">
- <Footer/>
-</div>
+
 
 
 
