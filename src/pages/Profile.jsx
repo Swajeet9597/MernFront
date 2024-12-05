@@ -14,6 +14,12 @@ import { BASE_URL } from '../services/helper';
 
 const Profile = () => {
 
+  const [activeEditCard, setActiveEditCard] = useState(true)
+
+  function hanldeEditPayment(){
+    setActiveEditCard(false)
+  }
+
     const [activeEditProfile, setActiveEditProfile] = useState(true);
 
     const [render,setRender] = useState(true)
@@ -158,7 +164,7 @@ useEffect(()=>{
                     <p>{card.number}</p>
                     <p>{card.name}</p>
                   </div>
-                  <img src="edit-3.png" alt="" />
+                  <img onClick={hanldeEditPayment} src="edit-3.png" alt="" />
                 </div>
                 ))}
                 
@@ -203,6 +209,9 @@ useEffect(()=>{
         )}
 
 
+        {activeEditCard ? null :   <div className="profileEdit">
+            <ProfileEditPg handleRender={handleRender} setActiveEditProfile={setActiveEditProfile} />
+          </div>}
 
 
 
@@ -274,7 +283,7 @@ useEffect(()=>{
                     <p>{card.number}</p>
                     <p>{card.name}</p>
                   </div>
-                  <img src="edit-3.png" alt="" />
+                  <img  src="edit-3.png" alt="" />
                 </div>
                 ))}
 
