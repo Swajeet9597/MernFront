@@ -22,6 +22,24 @@ const Profile = () => {
       setRender(!render)
     }
 
+    const [cardData, setCardData] = useState({
+      name:"",
+      number:""
+    })
+
+    const getCardDetails = async()=>{
+      const response = await fetch(`${BASE_URL}/api/card/cardInfo`,{
+        method:"GET"
+      })
+
+      if(response.ok){
+        let data = await response.json()
+        setCardData(data.msg)
+      }
+
+
+    }
+
     
     const navigate = useNavigate()
     const [userData, setuserData] = useState([])
@@ -134,7 +152,21 @@ useEffect(()=>{
             <div className="paymentMethod">
               <p>Saved Payment Methods</p>
               <div className="PaymentCards">
-                <div className="paymentCard">
+
+                {cardData.map((card)=>(
+                  <div className="paymentCard">
+                  <img src="cardPic.png" alt="" />
+                  <div className="cardDetails">
+                    <p>{card.number}</p>
+                    <p>{card.name}</p>
+                  </div>
+                  <img src="edit-3.png" alt="" />
+                </div>
+                ))}
+                
+
+
+                {/* <div className="paymentCard">
                   <img src="cardPic.png" alt="" />
                   <div className="cardDetails">
                     <p>xxxx xxxx xxxx 1234</p>
@@ -142,6 +174,8 @@ useEffect(()=>{
                   </div>
                   <img src="edit-3.png" alt="" />
                 </div>
+
+
                 <div className="paymentCard">
                   <img src="cardPic.png" alt="" />
                   <div className="cardDetails">
@@ -149,15 +183,10 @@ useEffect(()=>{
                     <p>Mike Ross</p>
                   </div>
                   <img src="edit-3.png" alt="" />
-                </div>
-                <div className="paymentCard">
-                  <img src="cardPic.png" alt="" />
-                  <div className="cardDetails">
-                    <p>xxxx xxxx xxxx 1234</p>
-                    <p>Mike Ross</p>
-                  </div>
-                  <img src="edit-3.png" alt="" />
-                </div>
+                </div> */}
+
+
+
                 <div className="addCardBtn">
                   <img src="btnImg3.png" alt="" />
 
