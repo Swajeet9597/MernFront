@@ -95,6 +95,7 @@ useEffect(()=>{
 },[render])
 useEffect(()=>{
   getUserData()
+  getCardDetails()
 },[])
 
   return (
