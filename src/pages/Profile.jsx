@@ -22,10 +22,7 @@ const Profile = () => {
       setRender(!render)
     }
 
-    const [cardData, setCardData] = useState({
-      name:"",
-      number:""
-    })
+    const [cardData, setCardData] = useState([])
 
     const getCardDetails = async()=>{
       const response = await fetch(`${BASE_URL}/api/card/cardInfo`,{
