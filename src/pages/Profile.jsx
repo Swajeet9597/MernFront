@@ -208,12 +208,16 @@ useEffect(()=>{
 
 
 
-
-
-<div className="footerHomeOPPPH">
- <Footer/>
-</div>
-
+{activeEditProfile ? (
+            <>
+            <div className="footerHomeOPPPH">
+             <Footer/>
+            </div>
+            
+            </>
+        ) : (
+         <></>
+        )}
 
 
 </> : <>
