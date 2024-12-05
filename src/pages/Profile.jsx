@@ -200,6 +200,11 @@ useEffect(()=>{
             </div>
           </div>
 
+          <div className="footerHomeOPPPH">
+ <Footer/>
+</div>
+
+
           {activeEditProfile ? (
             <></>
         ) : (
@@ -219,9 +224,6 @@ useEffect(()=>{
 
 
 
-<div className="footerHomeOPPPH">
- <Footer/>
-</div>
 
 
 
