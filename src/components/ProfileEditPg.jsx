@@ -117,7 +117,7 @@ const ProfileEditPg = ({setActiveEditProfile,handleRender}) => {
      <div className="editProfileBody">
           <p className="bodyHead">
             <img onClick={handleA} src="arrow-left.png" alt="" /> 
-            <img src="backIcon.png" alt="" />
+            <img onClick={handleA} src="backIcon.png" alt="" />
              My Profile
           </p>
           <div className="body_profile">
