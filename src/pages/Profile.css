@@ -343,6 +343,19 @@
   flex-direction: column;
   font-size: 1.5rem;
 }
+
+.profileEdit{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(47, 47, 47, 0.75);
+  position:static;
+  top: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 }
 
 
