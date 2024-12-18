@@ -25,10 +25,11 @@ const Login = () => {
     })
     console.log(response)
 
-    if(response.ok){
+    const dataApi = await response.json()
+
+    if(dataApi.success){
        navigate("/Home")
        localStorage.setItem("email",entereInfo.email)
-
     }
     } catch (error) {
       console.log(error)
