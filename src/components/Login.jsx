@@ -67,6 +67,7 @@ const Login = () => {
 
   return (
     <div className='loginbox' >
+           <ToastContainer />
       <div className="img">
       <img className='logoinbox' src={LOGO} />
       </div>
