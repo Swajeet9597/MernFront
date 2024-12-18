@@ -33,7 +33,7 @@ const Login = () => {
        localStorage.setItem("email",entereInfo.email)
     }
     else{
-      toast(dataApi.msg)
+      toast.error(dataApi.msg)
     }
     } catch (error) {
       console.log(error)
