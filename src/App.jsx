@@ -11,8 +11,9 @@ function App() {
  
   return (
     <>
-    <ToastContainer />
+    
       <div className="main">
+      <ToastContainer />
         <div className="container">
           <div className="left">
                 <Login />
