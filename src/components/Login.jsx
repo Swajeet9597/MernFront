@@ -17,7 +17,7 @@ const Login = () => {
       console.log(entereInfo)
     let response = await fetch(`${BASE_URL}/api/auth/login`,{
       method: "POST",
-      credentials1: 'include',
+      credentials: 'include',
       headers: {
         'Content-Type': "application/json",
       },
