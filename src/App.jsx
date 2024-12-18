@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Login from './components/Login'
 import homepage from './assets/homepage.png'
+import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer'
 
 function App() {
