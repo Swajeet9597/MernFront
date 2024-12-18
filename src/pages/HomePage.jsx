@@ -20,6 +20,7 @@ import RegisterInfoM from '../mobileComponents/RegisterInfoM';
 import Footer from '../components/Footer';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import {toast} from 'react-toastify';
 
 
 
@@ -43,7 +44,9 @@ const HomePage = () => {
 
   },[]);
 
-
+  useEffect(() => {
+    toast.success('This is a test toast!');
+  }, []);
 
   return (
     <div className='Homepage' >
