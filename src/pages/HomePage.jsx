@@ -53,7 +53,7 @@ const HomePage = () => {
        <ToastContainer />
         {screeSize.width > 768 ? ( 
           <>
-          <ToastContainer />
+     
         <div className="nav">
             <NavBar/>
         </div>
