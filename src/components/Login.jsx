@@ -33,7 +33,7 @@ const Login = () => {
        localStorage.setItem("email",entereInfo.email)
     }
     else{
-      toast("Invalid details!")
+      toast(dataApi.msg)
     }
     } catch (error) {
       console.log(error)
