@@ -11,8 +11,6 @@ const Login = () => {
   async function handleOnClick (e) {
 
     e.preventDefault()
-    // navigate("/Home")
-
     try {
       console.log(entereInfo)
     let response = await fetch(`${BASE_URL}/api/auth/login`,{
