@@ -24,6 +24,7 @@ const Login = () => {
       body: JSON.stringify(entereInfo)
     })
     console.log(response)
+    console.log("checking cookies",response.headers.get('set-cookie'));
 
     const dataApi = await response.json()
 
