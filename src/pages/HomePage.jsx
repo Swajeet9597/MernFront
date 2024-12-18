@@ -44,9 +44,9 @@ const HomePage = () => {
 
   },[]);
 
-  useEffect(() => {
-    toast.success('This is a test toast!');
-  }, []);
+  // useEffect(() => {
+  //   toast.success('This is a test toast!');
+  // }, []);
 
   return (
     <div className='Homepage' >
