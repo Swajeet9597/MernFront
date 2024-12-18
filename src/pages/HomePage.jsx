@@ -49,8 +49,10 @@ const HomePage = () => {
   // }, []);
 
   return (
+    <>
+     <ToastContainer />
     <div className='Homepage' >
-       <ToastContainer />
+      
         {screeSize.width > 768 ? ( 
           <>
      
@@ -218,6 +220,8 @@ const HomePage = () => {
       }
         
     </div>
+
+    </>
   );
 }
 
