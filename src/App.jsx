@@ -4,12 +4,14 @@ import Login from './components/Login'
 import homepage from './assets/homepage.png'
 import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/Footer'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const [count, setCount] = useState(0)
  
   return (
     <>
+    <ToastContainer />
       <div className="main">
         <div className="container">
           <div className="left">

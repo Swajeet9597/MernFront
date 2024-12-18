@@ -18,6 +18,8 @@ import AboutM from '../mobileComponents/AboutM';
 import RegisterInfo from '../components/RegisterInfo';
 import RegisterInfoM from '../mobileComponents/RegisterInfoM';
 import Footer from '../components/Footer';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -47,6 +49,7 @@ const HomePage = () => {
     <div className='Homepage' >
         {screeSize.width > 768 ? ( 
           <>
+          <ToastContainer />
         <div className="nav">
             <NavBar/>
         </div>
