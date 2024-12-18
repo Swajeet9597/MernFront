@@ -6,6 +6,9 @@ import google from '../assets/Google.png'
 import { useNavigate } from 'react-router-dom'
 import { BASE_URL } from '../services/helper';
 import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 const Login = () => {
   const navigate = useNavigate();
   async function handleOnClick (e) {
