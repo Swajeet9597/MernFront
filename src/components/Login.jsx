@@ -28,7 +28,7 @@ const Login = () => {
     const dataApi = await response.json()
 
     if(dataApi.success){
-      console.log(dataApi.msg)
+      console.log("console msg",dataApi.msg)
        navigate("/Home")
        localStorage.setItem("email",entereInfo.email)
     }
