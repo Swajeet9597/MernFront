@@ -5,6 +5,7 @@ import line from '../assets/Line.png'
 import google from '../assets/Google.png'
 import { useNavigate } from 'react-router-dom'
 import { BASE_URL } from '../services/helper';
+import {toast} from 'react-toastify';
 const Login = () => {
   const navigate = useNavigate();
   async function handleOnClick (e) {
@@ -16,6 +17,7 @@ const Login = () => {
       console.log(entereInfo)
     let response = await fetch(`${BASE_URL}/api/auth/login`,{
       method: "POST",
+      credentials1: 'include',
       headers: {
         'Content-Type': "application/json",
       },
