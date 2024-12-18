@@ -27,9 +27,13 @@ const Login = () => {
     const dataApi = await response.json()
 
     if(dataApi.success){
+      console.log(dataApi.msg)
        toast(dataApi.msg)
        navigate("/Home")
        localStorage.setItem("email",entereInfo.email)
+    }
+    else{
+      toast("Invalid details!")
     }
     } catch (error) {
       console.log(error)
