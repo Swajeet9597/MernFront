@@ -11,13 +11,11 @@ const NavBar2 = () => {
 
         const {fetchCurrentUserDetails} = useContext(Usercontext)
 
-        const getCurrentDetails = async(req,res)=>{
+        const getCurrentUserDetails = async(req,res)=>{
                 const cdata = await fetchCurrentUserDetails();
                 console.log("Cccccdata",cdata);
                 setuserData(cdata)
         }
-
-
 
         const [userData, setuserData] = useState([])
 
@@ -30,36 +28,13 @@ const NavBar2 = () => {
         function handleProductPage(){
                 navigate('/Product')
         }
+        const handleBack=()=>{
+                navigate('/Profile')
+        }
 
 
-        
-const handleBack=()=>{
-        navigate('/Profile')
-    }
-
-    
-        // const emailInfo = {
-        //     "email": localStorage.getItem("email")
-        // }
-    
-        // async function getUserData () {
-        //   const response = await fetch(`${BASE_URL}/api/auth/user`,{
-        //     method:"POST",
-        //     headers:{
-        //       "Content-Type":"application/json"
-        //     },
-        //     body: JSON.stringify(emailInfo)
-        //   })
-    
-        //   if(response.ok){
-        //     let data = await response.json()
-    
-        //     setuserData(data.msg)
-        //   }
-        // }
         useEffect(()=>{
-                // getUserData()
-                getCurrentDetails()
+                getCurrentUserDetails()
               },[])    
         
   return (
@@ -77,7 +52,7 @@ const handleBack=()=>{
         <div onClick={handleBack} className='profile1' >
 
                 <img src={user} alt="" className="user" />
-                <span>hey {userData.email}</span>
+                <span>hey {userData.name}</span>
         </div>
         </div>
     </div>
