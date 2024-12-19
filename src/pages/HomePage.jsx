@@ -29,6 +29,10 @@ const HomePage = () => {
 
   const {fetchCurrentUserDetails} = useContext(Usercontext)
 
+  const cdata = fetchCurrentUserDetails();
+
+  console.log("Cccccdata",cdata);
+
 
   // const fetchCurrentUserDetails = async()=>{
   //   let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
