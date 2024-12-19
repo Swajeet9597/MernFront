@@ -27,9 +27,8 @@ import { Usercontext } from '../context/context';
 
 const ProductPage = () => {
 
-  const {currentUser} = useContext(Usercontext)
 
-  console.log("currentID",currentUser);
+
 
   const [selectCart, setSelectCart] = useState(false)
   const [selectCartM, setSelectCartM] = useState(false)

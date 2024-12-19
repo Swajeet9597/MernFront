@@ -26,18 +26,19 @@ import { Usercontext } from '../context/context';
 
 const HomePage = () => {
 
-  const {setCurrentUser} = useContext(Usercontext)
 
-  const fetchCurrentUserDetails = async()=>{
-    let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
-      method: "GET",
-      credentials: "include"
-    })
+  const {fetchCurrentUserDetails} = useContext(Usercontext)
 
-    const data = await response.json()
-    console.log("dataaa",data.data)
-    setCurrentUser(data.data)
-  }
+
+  // const fetchCurrentUserDetails = async()=>{
+  //   let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
+  //     method: "GET",
+  //     credentials: "include"
+  //   })
+
+  //   const data = await response.json()
+  //   console.log("dataaa",data.data)
+  // }
 
   const getScreen = () =>{
     
