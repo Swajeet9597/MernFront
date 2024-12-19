@@ -24,12 +24,12 @@ import { Usercontext } from '../context/context';
 
 
 
-const HomePage = () => {
+const HomePage = async() => {
 
 
   const {fetchCurrentUserDetails} = useContext(Usercontext)
 
-  const cdata = fetchCurrentUserDetails();
+  const cdata = await fetchCurrentUserDetails();
 
   console.log("Cccccdata",cdata);
 
