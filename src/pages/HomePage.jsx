@@ -30,7 +30,6 @@ const HomePage = () => {
   const {fetchCurrentUserDetails} = useContext(Usercontext)
 
   const getCurrentDetails = async(req,res)=>{
-
     const cdata = await fetchCurrentUserDetails();
     console.log("Cccccdata",cdata);
   }
@@ -59,7 +58,6 @@ const HomePage = () => {
   const [screeSize, setScreenSize] = useState(getScreen());
 
   useEffect(()=>{
-    fetchCurrentUserDetails()
     getCurrentDetails()
     const Screen = () =>{
         setScreenSize(getScreen());

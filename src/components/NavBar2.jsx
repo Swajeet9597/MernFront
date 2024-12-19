@@ -1,10 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext,useEffect, useState } from 'react';
 import './NavBar2.css'
 import logo from '../assets/LOGO.png'
 import user from '../assets/User.png'
 import { useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../services/helper';
+import { Usercontext } from '../context/context';
+
+
 const NavBar2 = () => {
+
+        const {fetchCurrentUserDetails} = useContext(Usercontext)
+
+        const getCurrentDetails = async(req,res)=>{
+                const cdata = await fetchCurrentUserDetails();
+                console.log("Cccccdata",cdata);
+                setuserData(cdata)
+        }
+
 
 
         const [userData, setuserData] = useState([])
@@ -26,27 +38,28 @@ const handleBack=()=>{
     }
 
     
-        const emailInfo = {
-            "email": localStorage.getItem("email")
-        }
+        // const emailInfo = {
+        //     "email": localStorage.getItem("email")
+        // }
     
-        async function getUserData () {
-          const response = await fetch(`${BASE_URL}/api/auth/user`,{
-            method:"POST",
-            headers:{
-              "Content-Type":"application/json"
-            },
-            body: JSON.stringify(emailInfo)
-          })
+        // async function getUserData () {
+        //   const response = await fetch(`${BASE_URL}/api/auth/user`,{
+        //     method:"POST",
+        //     headers:{
+        //       "Content-Type":"application/json"
+        //     },
+        //     body: JSON.stringify(emailInfo)
+        //   })
     
-          if(response.ok){
-            let data = await response.json()
+        //   if(response.ok){
+        //     let data = await response.json()
     
-            setuserData(data.msg)
-          }
-        }
+        //     setuserData(data.msg)
+        //   }
+        // }
         useEffect(()=>{
-                getUserData()
+                // getUserData()
+                getCurrentDetails()
               },[])    
         
   return (
