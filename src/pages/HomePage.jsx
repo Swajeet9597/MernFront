@@ -36,7 +36,7 @@ const HomePage = () => {
 
     const data = await response.json()
     console.log("dataaa",data)
-    setCurrentUser(data)
+    setCurrentUser(data.data)
   }
 
   const getScreen = () =>{
