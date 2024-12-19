@@ -35,7 +35,7 @@ const HomePage = () => {
     })
 
     const data = await response.json()
-    console.log("dataaa",data)
+    console.log("dataaa",data.data)
     setCurrentUser(data.data)
   }
 
