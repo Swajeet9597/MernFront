@@ -26,28 +26,6 @@ import { Usercontext } from '../context/context';
 
 const HomePage = () => {
 
-
-  const {fetchCurrentUserDetails} = useContext(Usercontext)
-
-  const getCurrentDetails = async(req,res)=>{
-    const cdata = await fetchCurrentUserDetails();
-    console.log("Cccccdata",cdata);
-  }
-
-
-
-
-
-  // const fetchCurrentUserDetails = async()=>{
-  //   let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
-  //     method: "GET",
-  //     credentials: "include"
-  //   })
-
-  //   const data = await response.json()
-  //   console.log("dataaa",data.data)
-  // }
-
   const getScreen = () =>{
     
     return{
@@ -65,8 +43,6 @@ const HomePage = () => {
     window.addEventListener('resize', Screen);
 
   },[]);
-
-
 
   return (
     <>

@@ -52,7 +52,7 @@ const NavBar2 = () => {
         <div onClick={handleBack} className='profile1' >
 
                 <img src={user} alt="" className="user" />
-                <span>hey {userData.name}</span>
+                <span>hey {userData.email}</span>
         </div>
         </div>
     </div>
