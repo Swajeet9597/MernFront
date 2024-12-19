@@ -11,10 +11,7 @@ export const Userprovider = ({children})=>{
           method: "GET",
           credentials: "include"
         })
-    
         const data = await response.json()
-        console.log("newwwwww")
-        console.log("dataaa",data.data)
         return data.data
       }
 
