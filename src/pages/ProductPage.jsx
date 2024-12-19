@@ -45,7 +45,6 @@ const ProductPage = () => {
     if(response.ok){
         const data = await response.json()
         
-    console.log("fetched Cart data: ",data.msg);
     setCartData(data.msg)
     }
 
@@ -71,18 +70,6 @@ const ProductPage = () => {
     
       },[]);
 
-
-      // useEffect(()=>{
-
-       
-      //   if(selectItem){
-
-      //     console.log("useeffect selectitem")
-          
-      //     getCartInfo()
-      //   }
-     
-      // },[selectItem])
 
      useEffect(()=>{
       getCartData()

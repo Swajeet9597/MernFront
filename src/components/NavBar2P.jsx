@@ -13,7 +13,6 @@ const NavBar2P = () => {
 
         const getCurrentUserDetails = async(req,res)=>{
                 const cdata = await fetchCurrentUserDetails();
-                console.log("Cccccdata",cdata);
                 setuserData(cdata)
         }
 
