@@ -18,23 +18,35 @@ import AboutM from '../mobileComponents/AboutM';
 import RegisterInfo from '../components/RegisterInfo';
 import RegisterInfoM from '../mobileComponents/RegisterInfoM';
 import Footer from '../components/Footer';
+import { BASE_URL } from '../services/helper';
 
 
 
 
 const HomePage = () => {
 
+
+  const fetchCurrentUserDetails = async()=>{
+    let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
+      method: "GET",
+      credentials: "include"
+    })
+
+    const data = await response.json()
+    console.log("dataaa",data)
+  }
+
   const getScreen = () =>{
+    
     return{
       width:window.innerWidth,
     };
   };
 
-
-
   const [screeSize, setScreenSize] = useState(getScreen());
 
   useEffect(()=>{
+    fetchCurrentUserDetails()
     const Screen = () =>{
         setScreenSize(getScreen());
     };
