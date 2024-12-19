@@ -36,7 +36,6 @@ const HomePage = () => {
   const [screeSize, setScreenSize] = useState(getScreen());
 
   useEffect(()=>{
-    getCurrentDetails()
     const Screen = () =>{
         setScreenSize(getScreen());
     };
