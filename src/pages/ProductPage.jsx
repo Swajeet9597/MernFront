@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import './ProductPage.css'
 import NavBar from '../components/NavBar';
 import NavBar2 from '../components/NavBar2';
@@ -22,9 +22,14 @@ import RespoCustomerReview from '../mobileComponents/RespoCustomerReview';
 import RestoProductAndCart from '../components/RestoProductAndCart';
 import Cart from '../components/Cart';
 import { BASE_URL } from '../services/helper';
+import { Usercontext } from '../context/context';
 
 
 const ProductPage = () => {
+
+  const {currentUser} = useContext(Usercontext)
+
+  console.log(currentUser);
 
   const [selectCart, setSelectCart] = useState(false)
   const [selectCartM, setSelectCartM] = useState(false)

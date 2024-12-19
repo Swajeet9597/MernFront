@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
 import './HomePage.css'
 import NavBar2 from '../components/NavBar2';
@@ -19,12 +19,14 @@ import RegisterInfo from '../components/RegisterInfo';
 import RegisterInfoM from '../mobileComponents/RegisterInfoM';
 import Footer from '../components/Footer';
 import { BASE_URL } from '../services/helper';
+import { Usercontext } from '../context/context';
 
 
 
 
 const HomePage = () => {
 
+  const {setCurrentUser} = useContext(Usercontext)
 
   const fetchCurrentUserDetails = async()=>{
     let response = await fetch(`${BASE_URL}/api/user/userDetails`,{
@@ -34,6 +36,7 @@ const HomePage = () => {
 
     const data = await response.json()
     console.log("dataaa",data)
+    setCurrentUser(data.data)
   }
 
   const getScreen = () =>{

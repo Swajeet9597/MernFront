@@ -13,10 +13,12 @@ import PaymentSuccess from './pages/PaymentSuccess'
 import Profile from './pages/Profile'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import { Userprovider } from './context/context'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ToastContainer />
+    <Userprovider>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App/>} />
@@ -28,9 +30,9 @@ createRoot(document.getElementById('root')).render(
         <Route path='/Payment' element={<Payment/>}/>
         <Route path='/PaymentSuccess' element={<PaymentSuccess/>}/>
         <Route path='/Profile' element={<Profile/>}/>
-
       </Routes>
     </BrowserRouter>
+    </Userprovider>
   </StrictMode>
 )
 
