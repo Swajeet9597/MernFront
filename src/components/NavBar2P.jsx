@@ -1,10 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext,useEffect, useState } from 'react';
 import './NavBar2P.css'
 import logo from '../assets/LOGO.png'
 import user from '../assets/User.png'
 import { useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../services/helper';
+import { Usercontext } from '../context/context';
+
+
 const NavBar2P = () => {
+
+        const {fetchCurrentUserDetails} = useContext(Usercontext)
+
+        const getCurrentUserDetails = async(req,res)=>{
+                const cdata = await fetchCurrentUserDetails();
+                console.log("Cccccdata",cdata);
+                setuserData(cdata)
+        }
+
         const [userData, setuserData] = useState([])
 
         const navigate = useNavigate()
@@ -16,34 +28,14 @@ const NavBar2P = () => {
                 navigate('/Product')
         }
 
-
-        
-const handleBack=()=>{
-        navigate('/Profile')
-    }
-
-    
-        const emailInfo = {
-            "email": localStorage.getItem("email")
+        const handleBack=()=>{
+                navigate('/Profile')
         }
-    
-        async function getUserData () {
-          const response = await fetch(`${BASE_URL}/api/auth/user`,{
-            method:"POST",
-            headers:{
-              "Content-Type":"application/json"
-            },
-            body: JSON.stringify(emailInfo)
-          })
-    
-          if(response.ok){
-            let data = await response.json()
-    
-            setuserData(data.msg)
-          }
-        }
+
+  
+
         useEffect(()=>{
-                getUserData()
+                getCurrentUserDetails()
               },[])    
         
   return (
@@ -61,7 +53,7 @@ const handleBack=()=>{
     <div onClick={handleBack}  className='profile1' >
 
             <img src={user} alt="" className="user" />
-            <span>hey {userData.name}</span>
+            <span>hey {userData.email}</span>
     </div>
     </div>
 </div>
