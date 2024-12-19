@@ -24,14 +24,19 @@ import { Usercontext } from '../context/context';
 
 
 
-const HomePage = async() => {
+const HomePage = () => {
 
 
   const {fetchCurrentUserDetails} = useContext(Usercontext)
 
-  const cdata = await fetchCurrentUserDetails();
+  const getCurrentDetails = async(req,res)=>{
 
-  console.log("Cccccdata",cdata);
+    const cdata = await fetchCurrentUserDetails();
+    console.log("Cccccdata",cdata);
+  }
+
+
+
 
 
   // const fetchCurrentUserDetails = async()=>{
@@ -55,6 +60,7 @@ const HomePage = async() => {
 
   useEffect(()=>{
     fetchCurrentUserDetails()
+    getCurrentDetails()
     const Screen = () =>{
         setScreenSize(getScreen());
     };
