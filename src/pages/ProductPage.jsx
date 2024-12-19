@@ -29,7 +29,7 @@ const ProductPage = () => {
 
   const {currentUser} = useContext(Usercontext)
 
-  console.log(currentUser);
+  console.log("currentID",currentUser);
 
   const [selectCart, setSelectCart] = useState(false)
   const [selectCartM, setSelectCartM] = useState(false)
