@@ -19,6 +19,7 @@ const RestoPM = ({cartData, setCartData}) => {
     // })
     const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
       method:"POST",
+      credentials: "include",
       headers:{
         "Content-Type": "application/json",
       },
