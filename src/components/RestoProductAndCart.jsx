@@ -19,6 +19,8 @@ const RestoProductAndCart = ({selectItem,setSelectItem}) => {
           },
           body: JSON.stringify(item)
         })
+
+        console.log("cart//////",response)
        
         if (response.ok) {
             const updatedResponse = await fetch(`${BASE_URL}/api/product/cartAdd`, {
