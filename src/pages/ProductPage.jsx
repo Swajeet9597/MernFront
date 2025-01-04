@@ -56,6 +56,7 @@ const ProductPage = () => {
 
 
   async function getCartData(){
+    await  checkLogin()
     const response = await fetch(`${BASE_URL}/api/product/cartAdd`,{
         method: "GET",
     })
@@ -90,7 +91,7 @@ const ProductPage = () => {
 
 
      useEffect(()=>{
-      checkLogin()
+     
       getCartData()
      },[])
     
