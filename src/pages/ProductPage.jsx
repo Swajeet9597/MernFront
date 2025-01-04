@@ -90,12 +90,11 @@ const ProductPage = () => {
 
 
      useEffect(()=>{
+      checkLogin()
       getCartData()
      },[])
     
-     useEffect(()=>{
-      checkLogin()
-    },[])
+
 
   return (
     
