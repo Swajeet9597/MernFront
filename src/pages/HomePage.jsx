@@ -20,11 +20,33 @@ import RegisterInfoM from '../mobileComponents/RegisterInfoM';
 import Footer from '../components/Footer';
 import { BASE_URL } from '../services/helper';
 import { Usercontext } from '../context/context';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 const HomePage = () => {
+
+  const navigate = useNavigate()
+
+  const checkLogin = async(req,res)=>{
+    try {
+      
+      const response = await fetch(`${BASE_URL}/api/auth/checkLogin`,{
+        method:"GET",
+        credentials:"include"
+      })
+
+      const data = await response.json()
+
+      if(!data.success){
+        navigate("/")
+      }
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   const getScreen = () =>{
     

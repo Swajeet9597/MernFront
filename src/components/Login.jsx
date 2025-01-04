@@ -12,6 +12,7 @@ const Login = () => {
 
 
   const navigate = useNavigate();
+
   async function handleOnClick (e) {
 
     e.preventDefault()
@@ -28,7 +29,7 @@ const Login = () => {
     console.log(response)
     console.log("checking cookies",response.headers.get('set-cookie'));
 
-    const dataApi = await response.json()
+    const dataApi = await response.json()   
 
     if(dataApi.success){
       console.log(dataApi.msg)
