@@ -64,6 +64,9 @@ const HomePage = () => {
     window.addEventListener('resize', Screen);
 
   },[]);
+  useEffect(()=>{
+    checkLogin()
+  },[])
 
   return (
     <>
