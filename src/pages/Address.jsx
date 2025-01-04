@@ -22,6 +22,26 @@ const Address = () => {
         navigate('/Order')
     }
     
+    
+  const checkLogin = async(req,res)=>{
+    try {
+      
+      const response = await fetch(`${BASE_URL}/api/auth/checkLogin`,{
+        method:"GET",
+        credentials:"include"
+      })
+
+      const data = await response.json()
+
+      if(!data.success){
+        navigate("/")
+      }
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
     const getScreen = () =>{
         return{
           width:window.innerWidth,
@@ -37,6 +57,11 @@ const Address = () => {
         window.addEventListener('resize', Screen);
     
       },[]);
+
+      useEffect(()=>{
+        checkLogin()
+      },[])
+
   return (
    <>
    {screeSize.width > 768 ? <>

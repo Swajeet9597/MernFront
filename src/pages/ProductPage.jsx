@@ -27,7 +27,25 @@ import { Usercontext } from '../context/context';
 
 const ProductPage = () => {
 
+    
+  const checkLogin = async(req,res)=>{
+    try {
+      
+      const response = await fetch(`${BASE_URL}/api/auth/checkLogin`,{
+        method:"GET",
+        credentials:"include"
+      })
 
+      const data = await response.json()
+
+      if(!data.success){
+        navigate("/")
+      }
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 
   const [selectCart, setSelectCart] = useState(false)
@@ -75,7 +93,9 @@ const ProductPage = () => {
       getCartData()
      },[])
     
-
+     useEffect(()=>{
+      checkLogin()
+    },[])
 
   return (
     
